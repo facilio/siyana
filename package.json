@@ -1,0 +1,61 @@
+{
+  "name": "siyana",
+  "version": "0.1.0",
+  "description": "Siyana — open-source MCP server delivering region-tuned facilities-management asset knowledge: specs, fault resolution, and PPM schedules for HVAC, electrical, and plumbing. Launching GCC-first.",
+  "license": "Apache-2.0",
+  "author": "The Siyana contributors",
+  "type": "module",
+  "bin": {
+    "siyana": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "data",
+    "reference",
+    "schema",
+    "LICENSE",
+    "LICENSE-DATA",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "validate": "tsx scripts/validate.ts",
+    "gen-schema": "tsx scripts/gen-schema.ts",
+    "freshness": "tsx scripts/freshness.ts",
+    "stats": "tsx scripts/stats.ts",
+    "test": "vitest run",
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "siyana",
+    "facilities-management",
+    "cafm",
+    "hvac",
+    "ppm",
+    "maintenance",
+    "gcc",
+    "middle-east"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "minisearch": "^7.1.0",
+    "yaml": "^2.6.1",
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

@@ -1,0 +1,37 @@
+name: "🩹 Report inaccurate or outdated data"
+description: Something wrong, unsafe, or out of date in an existing entry? Flag it here.
+title: "[Fix] <asset id>: <short summary>"
+labels: ["knowledge", "data-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: Accuracy is everything for FM guidance. Thank you for keeping it honest.
+  - type: input
+    id: asset_id
+    attributes:
+      label: Asset id (and region)
+      placeholder: e.g. hvac-chiller-air-cooled (region gcc)
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - "Safety-critical (could cause harm if followed)"
+        - "Incorrect / misleading"
+        - "Outdated"
+        - "Typo / minor"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong, and what should it say?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public source backing the correction (optional)
+      placeholder: Public manufacturer page, standard by name/clause, or regulator guidance.

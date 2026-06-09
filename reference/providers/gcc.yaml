@@ -1,0 +1,1729 @@
+region: gcc
+description: GCC HVAC equipment supplier/provider & official-manual-source directory (Dubai/Abu Dhabi focus). Directory metadata
+  only — manual links point to the OEMs' own public pages; no manual content is reproduced.
+last_reviewed: '2026-06-08'
+providers:
+- id: hvac-gcc-0001
+  equipment_category: Absorption chiller
+  equipment_family: Chiller
+  model_or_family: YORK absorption chiller families
+  oem: Johnson Controls / YORK
+  supplier: Johnson Controls Middle East
+  provider_type: OEM direct regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Johnson Controls regional contact and product documentation route captured
+  supplier_website: https://me.johnsoncontrols.com/contact-us
+  product_page: https://www.johnsoncontrols.com/hvac-equipment
+  manual:
+    url: https://www.johnsoncontrols.com/services-and-support/product-documentation
+    type: Product documentation portal
+    coverage: Operate; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official documentation URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.johnsoncontrols.com/services-and-support/product-documentation
+  - https://me.johnsoncontrols.com/contact-us
+  notes: Absorption chiller manuals are model-specific and should be requested by exact machine family and serial.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0002
+  equipment_category: Air curtain
+  equipment_family: Air movement
+  model_or_family: Systemair / Trosten air curtain category
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE portal route and Trosten product route captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://qr.systemair.com/customer-portal/
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / model-specific
+    coverage: Install; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  notes: Air curtains need exact model, heater/cooling coil option and controller details.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0003
+  equipment_category: Air curtain
+  equipment_family: Air movement / entrance HVAC
+  model_or_family: Systemair air curtain families
+  oem: Systemair
+  supplier: Systemair UAE
+  provider_type: OEM regional office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE offices and customer portal captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://www.systemair.com/en-ae
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / unit-specific documentation
+    coverage: Install; operate; maintain after product lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  notes: Air curtains need exact model and controller/accessory details for the right manual.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0004
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: 39HQ air handling unit
+  oem: Carrier
+  supplier: UTS Carrier / Carrier UAE
+  provider_type: OEM/local joint venture provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Carrier UAE contact and regional product page captured
+  supplier_website: https://www.carrier.com/commercial/en/ae/contact-us/
+  product_page: https://www.carrier.com/commercial/en/qa/products/commercial/air-handlers/39hq/
+  manual:
+    url: https://www.carrier.com/commercial/en/us/literature/
+    type: Literature portal / product documentation
+    coverage: Install; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official vendor portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.carrier.com/commercial/en/qa/products/commercial/air-handlers/39hq/
+  - https://www.carrier.com/commercial/en/us/literature/
+  notes: 39HQ product page captured; exact O&M may depend on configuration and project submittal.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0005
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: FlaktGroup AHU / eQ / ESAS-type families
+  oem: FlaktGroup
+  supplier: FlaktGroup UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: FlaktGroup AE service contacts and product list captured
+  supplier_website: https://www.flaktgroup.com/ae/service/service-contacts/
+  product_page: https://www.flaktgroup.com/en/productlist/
+  manual:
+    url: https://www.flaktgroup.com/in/service/servicelink-support-for-my-ahu/
+    type: ServiceLink / unit-specific AHU documentation
+    coverage: Install; operate; configure controls; maintain after unit lookup
+    access: Official portal / variant-specific
+    verification: Official ServiceLink route captured
+    version: Unit-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.flaktgroup.com/ae/service/service-contacts/
+  - https://www.flaktgroup.com/in/service/servicelink-support-for-my-ahu/
+  notes: FlaktGroup routes AHU documentation through unit-specific ServiceLink; exact AHU identifier required.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0006
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: SKM AHU / FAHU families
+  oem: SKM Air Conditioning
+  supplier: SKM Air Conditioning UAE
+  provider_type: GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Sharjah factory with Dubai/Abu Dhabi offices/contact evidence captured
+  supplier_website: https://www.skmaircon.com/contact_us.php
+  product_page: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  manual:
+    url: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+    type: Full range catalogue
+    coverage: Select; maintain reference requires project O&M
+    access: Official product/catalogue only
+    verification: Official catalogue URL captured; public O&M not found in source pack
+    version: Catalogue
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  - https://www.skmaircon.com/contact_us.php
+  notes: Catalogue captures equipment family; detailed manuals likely project-specific.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0007
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: Systemair AHU families
+  oem: Systemair
+  supplier: Systemair UAE
+  provider_type: OEM regional office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE offices and customer portal captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://www.systemair.com/en-ae
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / unit-specific documentation
+    coverage: Install; operate; configure controls; maintain after product lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  notes: AHU manuals and spare parts likely resolved through Systemair QR/customer portal.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0008
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: Trane AHU families
+  oem: Trane
+  supplier: Trane Middle East / local UAE offices
+  provider_type: OEM regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Regional office/service and literature evidence found
+  supplier_website: https://www.trane.com/commercial/middle-east/ae/en.html
+  product_page: https://www.trane.com/commercial/north-america/us/en/products-systems/equipment/air-handling.html
+  manual:
+    url: https://www.trane.com/getyourliterature/manuals.aspx?creditJobID=1502278
+    type: Literature portal / model-specific manuals
+    coverage: Install; operate; maintain after exact model selection
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.trane.com/getyourliterature/manuals.aspx?creditJobID=1502278
+  notes: Project AHUs are often option-heavy; exact submittal/job number needed.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0009
+  equipment_category: Air handling unit
+  equipment_family: Airside equipment
+  model_or_family: Trosten AHU / FAHU / hygiene AHU families
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Dubai Investments Park and sales/service network evidence captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  - https://www.trosten-industries.com/sales-and-service-network/
+  notes: Public product portfolio visible; manuals likely issued by project/submittal/turnover pack.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0010
+  equipment_category: Air-cooled chiller
+  equipment_family: Chiller
+  model_or_family: EWAD air-cooled chiller
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Daikin MEA has UAE offices/sales network
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/operation-manuals/as/air-cooled-chiller/EWAD_Operation%20manual_D-EOMCA00A04-14_English.pdf
+    type: Operation manual
+    coverage: Operate; maintain; basic troubleshooting
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: D-EOMCA00A04-14
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/operation-manuals/as/air-cooled-chiller/EWAD_Operation%20manual_D-EOMCA00A04-14_English.pdf
+  - https://www.daikinmea.com/en_us/dmea-sales-network/dmea-united-arab-emirates/uae-offices.html
+  notes: Public O&M coverage available for EWAD family; site-specific commissioning pack still required for installed units.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0011
+  equipment_category: Air-cooled chiller
+  equipment_family: Chiller
+  model_or_family: YORK air-cooled chiller families
+  oem: Johnson Controls / YORK
+  supplier: Johnson Controls Middle East
+  provider_type: OEM direct regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Johnson Controls Middle East contact and documentation captured
+  supplier_website: https://me.johnsoncontrols.com/contact-us
+  product_page: https://www.johnsoncontrols.com/hvac-equipment
+  manual:
+    url: https://www.johnsoncontrols.com/services-and-support/product-documentation
+    type: Product documentation portal
+    coverage: Operate; configure; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official documentation URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.johnsoncontrols.com/services-and-support/product-documentation
+  - https://me.johnsoncontrols.com/contact-us
+  notes: Use official documentation portal by model/serial for current YORK manuals.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0012
+  equipment_category: Air-cooled chiller
+  equipment_family: Chiller
+  model_or_family: SKM chiller families
+  oem: SKM Air Conditioning
+  supplier: SKM Air Conditioning UAE
+  provider_type: GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Sharjah factory with Dubai/Abu Dhabi offices/contact evidence captured
+  supplier_website: https://www.skmaircon.com/contact_us.php
+  product_page: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  manual:
+    url: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+    type: Full range catalogue
+    coverage: Select; operate/maintain requires project O&M
+    access: Official product/catalogue only
+    verification: Official catalogue URL captured; public O&M not found in source pack
+    version: Catalogue
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  - https://www.skmaircon.com/contact_us.php
+  notes: Chiller family in full range catalogue; model-specific O&M not publicly captured.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0013
+  equipment_category: Air-cooled chiller
+  equipment_family: Chiller
+  model_or_family: Trane air-cooled chiller families
+  oem: Trane
+  supplier: Trane Middle East / local UAE offices
+  provider_type: OEM regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Trane literature portal evidence found
+  supplier_website: https://www.trane.com/commercial/middle-east/ae/en.html
+  product_page: https://www.trane.com/commercial/north-america/us/en/products-systems/equipment/chillers.html
+  manual:
+    url: https://www.trane.com/getyourliterature/manuals.aspx?creditJobID=1502278
+    type: Literature portal / model-specific manuals
+    coverage: Operate; configure; troubleshoot; maintain after exact model selection
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.trane.com/getyourliterature/manuals.aspx?creditJobID=1502278
+  notes: Manual retrieval works best by exact model, job number or literature number.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0014
+  equipment_category: Building automation system
+  equipment_family: Controls / BMS
+  model_or_family: Johnson Controls Metasys / HVAC controls
+  oem: Johnson Controls
+  supplier: Johnson Controls Middle East
+  provider_type: OEM direct regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Johnson Controls product documentation route captured
+  supplier_website: https://me.johnsoncontrols.com/contact-us
+  product_page: https://www.johnsoncontrols.com/building-automation-and-controls
+  manual:
+    url: https://www.johnsoncontrols.com/services-and-support/product-documentation
+    type: Product documentation portal
+    coverage: Configure; operate; troubleshoot; maintain
+    access: Official portal / variant-specific
+    verification: Official documentation URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.johnsoncontrols.com/services-and-support/product-documentation
+  - https://me.johnsoncontrols.com/contact-us
+  notes: Controls documentation depends on software version and field-controller model.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0015
+  equipment_category: Building automation system
+  equipment_family: Room automation / BMS
+  model_or_family: Siemens Desigo room automation / plug-and-play automation
+  oem: Siemens
+  supplier: Siemens Middle East supplier route
+  provider_type: Controls OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Siemens official support document captured
+  supplier_website: https://www.siemens.com/global/en.html
+  product_page: https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+  manual:
+    url: https://cache.industry.siemens.com/dl/files/294/109789294/att_1046052/v3/A6V10361918.pdf?download=true
+    type: Installation / configuration document
+    coverage: Install; configure; maintain
+    access: Public direct PDF
+    verification: Official Siemens support/cache URL captured
+    version: A6V10361918 / v3
+    language: English
+  confidence: High
+  sources:
+  - https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+  - https://cache.industry.siemens.com/dl/files/294/109789294/att_1046052/v3/A6V10361918.pdf?download=true
+  notes: Useful for Desigo room automation installation/configuration baseline.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0016
+  equipment_category: Chilled beam
+  equipment_family: Air-water terminal
+  model_or_family: Carrier / TROX / regional chilled-beam supply category
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Category captured through TROX manual and wider supplier portfolios
+  supplier_website: https://www.trox.ae/
+  product_page: https://cdn.trox.de/8e766dbda26b405b/62548ef8a54c/DID614_A00000048003_V2_2023_07_GB_en.pdf
+  manual:
+    url: https://cdn.trox.de/8e766dbda26b405b/62548ef8a54c/DID614_A00000048003_V2_2023_07_GB_en.pdf
+    type: Representative public IOM
+    coverage: Install; operate; maintain
+    access: Public direct PDF
+    verification: Representative official manual URL captured
+    version: V2 / 2023-07
+    language: English
+  confidence: Medium
+  sources:
+  - https://cdn.trox.de/8e766dbda26b405b/62548ef8a54c/DID614_A00000048003_V2_2023_07_GB_en.pdf
+  notes: Representative row for chilled-beam equipment category; use exact OEM/model for projects.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0017
+  equipment_category: Chilled beam
+  equipment_family: Air-water terminal
+  model_or_family: DID614 active chilled beam
+  oem: TROX
+  supplier: TROX Middle East / UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX UAE documentation/contact map captured
+  supplier_website: https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  product_page: https://www.trox.ae/
+  manual:
+    url: https://cdn.trox.de/8e766dbda26b405b/62548ef8a54c/DID614_A00000048003_V2_2023_07_GB_en.pdf
+    type: Installation and operating manual
+    coverage: Install; operate; maintain
+    access: Public direct PDF
+    verification: Official vendor CDN URL captured
+    version: V2 / 2023-07
+    language: English
+  confidence: High
+  sources:
+  - https://cdn.trox.de/8e766dbda26b405b/62548ef8a54c/DID614_A00000048003_V2_2023_07_GB_en.pdf
+  - https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  notes: Direct TROX manual captured for chilled beam family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0018
+  equipment_category: Chilled-water system accessory
+  equipment_family: Hydronic plant accessory
+  model_or_family: Pumps, drives, valves, expansion/pressurisation accessories
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Hydronic ecosystem represented by Grundfos, Wilo, Armstrong and Danfoss routes
+  supplier_website: https://product-selection.grundfos.com/ae
+  product_page: https://product-selection.grundfos.com/ae
+  manual:
+    url: https://product-selection.grundfos.com/ae
+    type: Product Center / model-specific documentation
+    coverage: Install; configure; operate; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Representative official documentation route captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://product-selection.grundfos.com/ae
+  - https://wilo.com/ae/en/Local-Information/United-Arab-Emirates/
+  - https://armstrongfluidtechnology.com/en/products-and-services/heating-and-cooling/commercial-pumps
+  - https://assets.danfoss.com/documents/latest/271401/AQ361181455131en-US0801.pdf
+  notes: Accessory equipment is not fully enumerable without project asset register; this row preserves the category for GCC
+    inventory structure.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0019
+  equipment_category: Condensing unit
+  equipment_family: DX equipment
+  model_or_family: Trosten condensing units
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Trosten product portfolio captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  notes: Direct O&M manual not found publicly; exact condensing unit model required.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0020
+  equipment_category: Control valve / actuator
+  equipment_family: Hydronic and airside controls
+  model_or_family: HVAC valves, damper actuators and control accessories
+  oem: Multiple controls OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Controls ecosystem represented by Siemens, Johnson Controls and Danfoss source routes
+  supplier_website: https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+  product_page: https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+  manual:
+    url: https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+    type: Representative controls documentation route
+    coverage: Configure; operate; troubleshoot; maintain
+    access: Official portal / variant-specific
+    verification: Representative official documentation route captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://support.industry.siemens.com/cs/document/109871632/desigo-plug-and-play-automation-installation
+  - https://www.johnsoncontrols.com/services-and-support/product-documentation
+  notes: Control valves/actuators are often included under BAS/DDC and require exact make/model for manuals.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0021
+  equipment_category: Cooling tower
+  equipment_family: Evaporative heat rejection
+  model_or_family: BAC cooling tower families
+  oem: Baltimore Aircoil Company
+  supplier: Baltimore Aircoil Middle East LLC
+  provider_type: OEM regional sales office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: BAC Middle East office and manuals page captured
+  supplier_website: https://baltimoreaircoil.com/es/baltimore-aircoil-middle-east-llc-oficina-de-ventas
+  product_page: https://baltimoreaircoil.com/
+  manual:
+    url: https://baltimoreaircoil.com/manuals
+    type: Manuals library / model-specific
+    coverage: Operate; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official manuals URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://baltimoreaircoil.com/manuals
+  - https://baltimoreaircoil.com/es/baltimore-aircoil-middle-east-llc-oficina-de-ventas
+  notes: BAC manuals page requires model-specific selection.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0022
+  equipment_category: Cooling tower
+  equipment_family: Evaporative heat rejection
+  model_or_family: EVAPCO cooling tower families
+  oem: EVAPCO
+  supplier: EVAPCO Middle East / UAE supplier route
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: EVAPCO worldwide contact and O&M manual captured
+  supplier_website: https://www.evapco.com/evapco-worldwide-contact-list
+  product_page: https://www.evapco.com/
+  manual:
+    url: https://www.evapco.com/sites/evapco.com/files/2025-03/TWR25OM_8.5x11.pdf
+    type: Operation and maintenance manual
+    coverage: Operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: 2025-03
+    language: English
+  confidence: High
+  sources:
+  - https://www.evapco.com/sites/evapco.com/files/2025-03/TWR25OM_8.5x11.pdf
+  - https://www.evapco.com/evapco-worldwide-contact-list
+  notes: Direct O&M manual captured for cooling tower equipment.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0023
+  equipment_category: Cooling tower
+  equipment_family: Evaporative heat rejection
+  model_or_family: SPX / Marley cooling tower families
+  oem: SPX Cooling Technologies
+  supplier: SPX Cooling Technologies regional supplier route
+  provider_type: OEM/global provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Product/website captured; local manual route not fully resolved
+  supplier_website: https://spxcooling.com/
+  product_page: https://spxcooling.com/
+  confidence: Medium
+  sources:
+  - https://spxcooling.com/
+  notes: Cooling tower source included for completeness; exact GCC distribution/manual route needs follow-up.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0024
+  equipment_category: Dampers
+  equipment_family: Volume control / motorized / fire dampers
+  model_or_family: TROX, FlaktGroup, Trosten, Systemair damper families
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Direct TROX fire-damper manual plus FlaktGroup/Systemair/Trosten product routes captured
+  supplier_website: https://www.trox.ae/
+  product_page: https://cdn.trox.de/b40a60247ec34586/47662d1fc89f/FKA2-EU_OM_2020_11_A00000076523_V2_GB_en.pdf
+  manual:
+    url: https://cdn.trox.de/b40a60247ec34586/47662d1fc89f/FKA2-EU_OM_2020_11_A00000076523_V2_GB_en.pdf
+    type: Representative public manual
+    coverage: Install; operate/test; maintain
+    access: Public direct PDF
+    verification: Representative official manual URL captured
+    version: V2 / 2020-11
+    language: English
+  confidence: Medium
+  sources:
+  - https://cdn.trox.de/b40a60247ec34586/47662d1fc89f/FKA2-EU_OM_2020_11_A00000076523_V2_GB_en.pdf
+  - https://www.flaktgroup.com/en/productlist/
+  - https://qr.systemair.com/customer-portal/
+  notes: Representative category row; exact damper type and actuator matter.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0025
+  equipment_category: Dehumidifier
+  equipment_family: Desiccant dehumidification
+  model_or_family: Munters MCDG series
+  oem: Munters
+  supplier: Munters UAE / regional office
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Munters UAE contact and public manuals captured
+  supplier_website: https://www.munters.com/en-ae/contact/
+  product_page: https://www.munters.com/en-ae/
+  manual:
+    url: https://www.munters.com/globalassets/inriver/manual/manual_mcdg_en2.pdf
+    type: User / operation manual
+    coverage: Operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: manual_mcdg_en2
+    language: English
+  confidence: High
+  sources:
+  - https://www.munters.com/globalassets/inriver/manual/manual_mcdg_en2.pdf
+  - https://www.munters.com/en-ae/contact/
+  notes: Public manual captured for MCDG dehumidifier family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0026
+  equipment_category: Dehumidifier
+  equipment_family: Desiccant dehumidification
+  model_or_family: Munters MG series
+  oem: Munters
+  supplier: Munters UAE / regional office
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Munters UAE contact and public manuals captured
+  supplier_website: https://www.munters.com/en-ae/contact/
+  product_page: https://www.munters.com/en-ae/
+  manual:
+    url: https://www.munters.com/globalassets/inriver/manual/manual_mg_en2.pdf?v=638463616580000000
+    type: User / operation manual
+    coverage: Operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: manual_mg_en2
+    language: English
+  confidence: High
+  sources:
+  - https://www.munters.com/globalassets/inriver/manual/manual_mg_en2.pdf?v=638463616580000000
+  - https://www.munters.com/en-ae/contact/
+  notes: Public manual captured for MG dehumidifier family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0027
+  equipment_category: Diffuser / grille
+  equipment_family: Air terminal devices
+  model_or_family: TROX / Trosten / SKM air-terminal families
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Product/category sources captured; exact manuals variant-specific
+  supplier_website: https://www.trox.ae/
+  product_page: https://www.trox.ae/en/downloads/
+  manual:
+    url: https://www.trox.ae/en/downloads/
+    type: Download library / model-specific
+    coverage: Install; clean; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official download/library route captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  notes: Air terminals are usually project-scheduled and not operated like active equipment; install/cleaning docs still required.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0028
+  equipment_category: Diffuser / grille / louvre
+  equipment_family: Air distribution terminal
+  model_or_family: TROX air terminal devices
+  oem: TROX
+  supplier: TROX Middle East / UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX UAE documentation/contact map captured
+  supplier_website: https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  product_page: https://www.trox.ae/
+  manual:
+    url: https://www.trox.ae/en/downloads/
+    type: Official download library / model-specific
+    coverage: Install; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official download/library route captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  notes: Air-terminal manuals are usually model/series specific.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0029
+  equipment_category: Duct fan
+  equipment_family: Ventilation fan
+  model_or_family: Systemair duct / inline fans
+  oem: Systemair
+  supplier: Systemair UAE
+  provider_type: OEM regional office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE offices and customer portal captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://www.systemair.com/en-ae
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / unit-specific documentation
+    coverage: Install; operate; maintain after product lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  notes: Systemair documentation/spares route captured through customer portal.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0030
+  equipment_category: Ducted split / condensing unit
+  equipment_family: DX equipment
+  model_or_family: SKM ducted split and condensing-unit families
+  oem: SKM Air Conditioning
+  supplier: SKM Air Conditioning UAE
+  provider_type: GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Sharjah factory with Dubai/Abu Dhabi offices/contact evidence captured
+  supplier_website: https://www.skmaircon.com/contact_us.php
+  product_page: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  manual:
+    url: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+    type: Full range catalogue
+    coverage: Select; operate/maintain requires project O&M
+    access: Official product/catalogue only
+    verification: Official catalogue URL captured; public O&M not found in source pack
+    version: Catalogue
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  - https://www.skmaircon.com/contact_us.php
+  notes: Exact model O&M not publicly captured.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0031
+  equipment_category: Ecology unit / kitchen exhaust
+  equipment_family: Kitchen ventilation / filtration
+  model_or_family: Trosten ecology units
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Trosten ecology-unit product page captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/ecology-unit-manufacturer-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/ecology-unit-manufacturer-uae/
+  - https://www.trosten-industries.com/sales-and-service-network/
+  notes: Kitchen ecology units require cleaning, UV/ESP/filter maintenance and fire-safety integration details.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0032
+  equipment_category: Energy recovery ventilator
+  equipment_family: ERV / HRV
+  model_or_family: Daikin VAM / Trosten heat-recovery / Systemair ventilation
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Daikin direct HRV manual plus Trosten/Systemair routes captured
+  supplier_website: https://www.daikinmea.com/en_US/products.html
+  product_page: https://www.daikinmea.com/content/dam/document-library/installation-manuals/vent/heat-reclaim-ventilation/vam-fa5/VAM-FA5_3PW90202-2_Installation%20manuals_English.pdf
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/installation-manuals/vent/heat-reclaim-ventilation/vam-fa5/VAM-FA5_3PW90202-2_Installation%20manuals_English.pdf
+    type: Representative public installation manual
+    coverage: Install; configure; maintain
+    access: Public direct PDF
+    verification: Representative official manual URL captured
+    version: 3PW90202-2
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/installation-manuals/vent/heat-reclaim-ventilation/vam-fa5/VAM-FA5_3PW90202-2_Installation%20manuals_English.pdf
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  - https://qr.systemair.com/customer-portal/
+  notes: Representative ERV/HRV category row; exact heat-recovery model required for asset-specific register.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0033
+  equipment_category: Fan / air movement
+  equipment_family: Ventilation fan
+  model_or_family: FlaktGroup fan product families
+  oem: FlaktGroup
+  supplier: FlaktGroup UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: FlaktGroup AE service contacts and product list captured
+  supplier_website: https://www.flaktgroup.com/ae/service/service-contacts/
+  product_page: https://www.flaktgroup.com/en/productlist/
+  manual:
+    url: https://www.flaktgroup.com/en/productlist/
+    type: Product list / model-specific documentation
+    coverage: Install; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official product-list route captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.flaktgroup.com/en/productlist/
+  - https://www.flaktgroup.com/ae/service/service-contacts/
+  notes: Product list confirms equipment universe; manual lookup requires exact product family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0034
+  equipment_category: Fan coil unit
+  equipment_family: Terminal unit
+  model_or_family: 42NL / 42NH concealed and ducted fan coil
+  oem: Carrier
+  supplier: UTS Carrier / Carrier UAE
+  provider_type: OEM/local joint venture provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Carrier regional product page captured
+  supplier_website: https://www.carrier.com/commercial/en/ae/contact-us/
+  product_page: https://www.carrier.com/commercial/en/eu/products/air-treatment/hydraulic-terminal-units/concealed-and-ducted-fan-coil/42nl-42nh/
+  manual:
+    url: https://www.carrier.com/commercial/en/us/literature/
+    type: Literature portal / product documentation
+    coverage: Install; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official vendor portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.carrier.com/commercial/en/eu/products/air-treatment/hydraulic-terminal-units/concealed-and-ducted-fan-coil/42nl-42nh/
+  - https://www.carrier.com/commercial/en/us/literature/
+  notes: FCU manuals are typically variant-specific; product page captured.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0035
+  equipment_category: Fan coil unit
+  equipment_family: Terminal unit
+  model_or_family: SKM FCU families
+  oem: SKM Air Conditioning
+  supplier: SKM Air Conditioning UAE
+  provider_type: GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Sharjah factory with Dubai/Abu Dhabi offices/contact evidence captured
+  supplier_website: https://www.skmaircon.com/contact_us.php
+  product_page: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  manual:
+    url: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+    type: Full range catalogue
+    coverage: Select; maintain reference requires project O&M
+    access: Official product/catalogue only
+    verification: Official catalogue URL captured; public O&M not found in source pack
+    version: Catalogue
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  - https://www.skmaircon.com/contact_us.php
+  notes: Catalogue captures FCU family; exact O&M not publicly captured.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0036
+  equipment_category: Fan coil unit
+  equipment_family: Terminal unit
+  model_or_family: Trosten FCU families
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Dubai Investments Park and sales/service network evidence captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  - https://www.trosten-industries.com/sales-and-service-network/
+  notes: FCU O&M expected through submittal/project pack rather than public manual library.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0037
+  equipment_category: Fire / smoke damper
+  equipment_family: Life-safety air control
+  model_or_family: FlaktGroup fire safety products
+  oem: FlaktGroup
+  supplier: FlaktGroup UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: FlaktGroup AE service contacts and product list captured
+  supplier_website: https://www.flaktgroup.com/ae/service/service-contacts/
+  product_page: https://www.flaktgroup.com/en/productlist/
+  manual:
+    url: https://www.flaktgroup.com/en/productlist/
+    type: Product list / model-specific documentation
+    coverage: Install; operate/test; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official product-list route captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.flaktgroup.com/en/productlist/
+  - https://www.flaktgroup.com/ae/service/service-contacts/
+  notes: Fire/smoke equipment manuals must match actuator and project approval/cause-effect.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0038
+  equipment_category: Fire damper
+  equipment_family: Fire / smoke damper
+  model_or_family: FKA2-EU fire damper
+  oem: TROX
+  supplier: TROX Middle East / UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX UAE documentation/contact map captured
+  supplier_website: https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  product_page: https://www.trox.ae/
+  manual:
+    url: https://cdn.trox.de/b40a60247ec34586/47662d1fc89f/FKA2-EU_OM_2020_11_A00000076523_V2_GB_en.pdf
+    type: Operating and installation manual
+    coverage: Install; operate/test; maintain
+    access: Public direct PDF
+    verification: Official vendor CDN URL captured
+    version: V2 / 2020-11
+    language: English
+  confidence: High
+  sources:
+  - https://cdn.trox.de/b40a60247ec34586/47662d1fc89f/FKA2-EU_OM_2020_11_A00000076523_V2_GB_en.pdf
+  - https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  notes: Direct public fire-damper manual captured.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0039
+  equipment_category: Fresh air handling unit
+  equipment_family: Airside equipment
+  model_or_family: Trosten FAHU / treated fresh air units
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Dubai Investments Park and sales/service network evidence captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  - https://www.trosten-industries.com/sales-and-service-network/
+  notes: FAHUs are custom/option-heavy and require exact unit tag data.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0040
+  equipment_category: Heat reclaim ventilation
+  equipment_family: Ventilation / energy recovery
+  model_or_family: VAM-FA5 heat reclaim ventilation
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: UAE sales network/office evidence found
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/installation-manuals/vent/heat-reclaim-ventilation/vam-fa5/VAM-FA5_3PW90202-2_Installation%20manuals_English.pdf
+    type: Installation manual
+    coverage: Install; configure basics; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: 3PW90202-2
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/installation-manuals/vent/heat-reclaim-ventilation/vam-fa5/VAM-FA5_3PW90202-2_Installation%20manuals_English.pdf
+  notes: Manual captured for HRV/ERV style ventilation equipment.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0041
+  equipment_category: Humidifier
+  equipment_family: Steam humidification
+  model_or_family: Condair RS series
+  oem: Condair
+  supplier: Condair Middle East supplier route
+  provider_type: OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Condair public manuals captured
+  supplier_website: https://www.condair.com/
+  product_page: https://www.condair.com/
+  manual:
+    url: https://www.condair.com/m/0/2611992-rs-series-installation-manual.pdf
+    type: Installation manual
+    coverage: Install; configure; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: '2611992'
+    language: English
+  confidence: High
+  sources:
+  - https://www.condair.com/m/0/2611992-rs-series-installation-manual.pdf
+  notes: Installation manual captured; operation manual is separate row.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0042
+  equipment_category: Humidifier
+  equipment_family: Steam humidification
+  model_or_family: Condair RS series
+  oem: Condair
+  supplier: Condair Middle East supplier route
+  provider_type: OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Condair public manuals captured
+  supplier_website: https://www.condair.com/
+  product_page: https://www.condair.com/
+  manual:
+    url: https://www.condair.com/m/0/2582418-i-rs-series-operation-manual.pdf
+    type: Operation manual
+    coverage: Operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: '2582418'
+    language: English
+  confidence: High
+  sources:
+  - https://www.condair.com/m/0/2582418-i-rs-series-operation-manual.pdf
+  notes: Operation manual captured for RS series.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0043
+  equipment_category: HVAC controller
+  equipment_family: Humidification / refrigeration controls
+  model_or_family: CAREL HVAC control families
+  oem: CAREL
+  supplier: CAREL Middle East distributor route
+  provider_type: Controls OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: CAREL distributor/support route captured in source pack; UAE-specific manual route requires follow-up
+  supplier_website: https://www.carel.com/
+  product_page: https://www.carel.com/
+  manual:
+    url: https://ish.carel.com/distributors-egypt
+    type: Distributor/support route / model-specific documentation
+    coverage: Configure; operate; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official/distributor URL captured; UAE-specific direct manuals not captured
+    version: Variant-specific
+    language: English
+  confidence: Low
+  sources:
+  - https://ish.carel.com/distributors-egypt
+  - https://www.carel.com/
+  notes: Included because controls are part of HVAC operation ecosystem; exact controller manual depends on controller family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0044
+  equipment_category: In-row cooling
+  equipment_family: Data center precision cooling
+  model_or_family: Liebert CRV in-row cooling system 10-40 kW
+  oem: Vertiv
+  supplier: Vertiv Middle East supplier route
+  provider_type: OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Vertiv public user manual captured
+  supplier_website: https://www.vertiv.com/
+  product_page: https://www.vertiv.com/en-emea/products-catalog/thermal-management/in-row-cooling/
+  manual:
+    url: https://www.vertiv.com/48ed36/globalassets/products/thermal-management/in-row-cooling/liebert-crv-in-row-cooling-system-10-40kw/liebert-crv-row-based-cooling-system-user-manual-sl-11975.pdf
+    type: User manual
+    coverage: Operate; configure; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: SL-11975
+    language: English
+  confidence: High
+  sources:
+  - https://www.vertiv.com/48ed36/globalassets/products/thermal-management/in-row-cooling/liebert-crv-in-row-cooling-system-10-40kw/liebert-crv-row-based-cooling-system-user-manual-sl-11975.pdf
+  notes: Direct user manual captured for in-row cooling family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0045
+  equipment_category: Jet fan
+  equipment_family: Car park ventilation
+  model_or_family: Systemair jet fan families
+  oem: Systemair
+  supplier: Systemair UAE
+  provider_type: OEM regional office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE offices and customer portal captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://www.systemair.com/en-ae
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / unit-specific documentation
+    coverage: Install; operate; troubleshoot; maintain after product lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  notes: Jet-fan systems require controls, smoke-mode and fire-strategy documents beyond equipment manual.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0046
+  equipment_category: Louvre / damper / air terminal
+  equipment_family: Air distribution component
+  model_or_family: Trosten air distribution/accessory products
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Trosten product portfolio captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  notes: Accessory manuals or installation instructions not publicly found in source pack.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0047
+  equipment_category: Multi-split air conditioner
+  equipment_family: Residential / light commercial DX
+  model_or_family: MKC-RVM / MKC-SVM multi-split family
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: UAE sales network/office evidence found
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/DameaWebsite/ProductGroups/multisplit/MKC-R-S-Series/MKC-RVM%2C%20MKC-SVM%20Catalogue.pdf
+    type: Catalogue / technical literature
+    coverage: Select; operate basics; maintenance reference requires model manual
+    access: Official product/catalogue only
+    verification: Official vendor URL captured
+    version: Catalogue
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/DameaWebsite/ProductGroups/multisplit/MKC-R-S-Series/MKC-RVM%2C%20MKC-SVM%20Catalogue.pdf
+  notes: Public catalogue captured; model-specific O&M manual should be requested by exact model.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0048
+  equipment_category: Packaged air conditioner
+  equipment_family: Packaged DX
+  model_or_family: SKM packaged AC / rooftop families
+  oem: SKM Air Conditioning
+  supplier: SKM Air Conditioning UAE
+  provider_type: GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Sharjah factory with Dubai/Abu Dhabi offices/contact evidence captured
+  supplier_website: https://www.skmaircon.com/contact_us.php
+  product_page: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  manual:
+    url: https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+    type: Full range catalogue
+    coverage: Select; operate/maintain requires project O&M
+    access: Official product/catalogue only
+    verification: Official catalogue URL captured; public O&M not found in source pack
+    version: Catalogue
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.skmaircon.com/catalogues_new/SKM_Product_Full_Range.pdf
+  - https://www.skmaircon.com/contact_us.php
+  notes: Packaged AC manual should be requested by exact model and option code.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0049
+  equipment_category: Precision cooling
+  equipment_family: Data center thermal management
+  model_or_family: STULZ precision cooling families
+  oem: STULZ
+  supplier: STULZ EMEA / Dubai hub
+  provider_type: OEM regional hub/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: STULZ Dubai EMEA hub and product pages captured
+  supplier_website: https://www.stulz.com/newsroom/detail/stulz-builds-new-center-of-excellence-emea/
+  product_page: https://www.stulz.com/en-us/products/
+  manual:
+    url: https://www.stulz.com/en-us/products/
+    type: Product pages / model-specific documentation route
+    coverage: Operate; configure; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official product/hub URL captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.stulz.com/newsroom/detail/stulz-builds-new-center-of-excellence-emea/
+  - https://www.stulz.com/en-us/products/
+  notes: Dubai Center of Excellence/hub evidence captured; model-specific manuals should be retrieved from STULZ by unit family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0050
+  equipment_category: Precision cooling
+  equipment_family: Room cooling / close control
+  model_or_family: Liebert PDX / PCW thermal management system
+  oem: Vertiv
+  supplier: Vertiv Middle East supplier route
+  provider_type: OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Vertiv public user manual captured
+  supplier_website: https://www.vertiv.com/
+  product_page: https://www.vertiv.com/en-emea/products-catalog/thermal-management/
+  manual:
+    url: https://www.vertiv.com/499f41/globalassets/products/thermal-management/room-cooling/liebert-pdx-pcw-thermal-management-system-user-manual_01.pdf
+    type: User manual
+    coverage: Operate; configure; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: User manual 01
+    language: English
+  confidence: High
+  sources:
+  - https://www.vertiv.com/499f41/globalassets/products/thermal-management/room-cooling/liebert-pdx-pcw-thermal-management-system-user-manual_01.pdf
+  notes: Direct public user manual captured for room precision cooling.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0051
+  equipment_category: Pump
+  equipment_family: HVAC fluid-flow equipment
+  model_or_family: Armstrong commercial pumps
+  oem: Armstrong Fluid Technology
+  supplier: Armstrong Fluid Technology Dubai regional facility
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Armstrong regional facility and commercial pumps pages captured
+  supplier_website: https://armstrongfluidtechnology.com/en/help-and-support/regional-facilities
+  product_page: https://armstrongfluidtechnology.com/en/products-and-services/heating-and-cooling/commercial-pumps
+  manual:
+    url: https://armstrongfluidtechnology.com/en/help-and-support/regional-facilities
+    type: Regional facility / model-specific documentation route
+    coverage: Install; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official vendor URL captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://armstrongfluidtechnology.com/en/products-and-services/heating-and-cooling/commercial-pumps
+  - https://armstrongfluidtechnology.com/en/help-and-support/regional-facilities
+  notes: Dubai regional facility evidence captured; manual retrieval requires exact pump model.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0052
+  equipment_category: Pump
+  equipment_family: Chilled-water / condenser-water pump
+  model_or_family: Grundfos HVAC pump families
+  oem: Grundfos
+  supplier: Grundfos UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Grundfos UAE where-to-buy and Product Center captured
+  supplier_website: https://www.grundfos.com/ae/contact/where-to-buy
+  product_page: https://product-selection.grundfos.com/ae
+  manual:
+    url: https://product-selection.grundfos.com/ae
+    type: Product Center / model-specific documentation
+    coverage: Install; configure; operate; troubleshoot; maintain after exact pump selection
+    access: Official portal / variant-specific
+    verification: Official Product Center URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://product-selection.grundfos.com/ae
+  - https://www.grundfos.com/ae/contact/where-to-buy
+  notes: Grundfos documentation is strongest after exact pump variant selection.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0053
+  equipment_category: Pump
+  equipment_family: Chilled-water / condenser-water pump
+  model_or_family: Wilo HVAC pump families
+  oem: Wilo
+  supplier: Wilo UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Wilo UAE local page and official downloads route captured
+  supplier_website: https://wilo.com/ae/en/Local-Information/United-Arab-Emirates/
+  product_page: https://wilo.com/ae/en/
+  manual:
+    url: https://wilo.com/ie/en/Local-Information/Downloads/
+    type: Download centre / model-specific documentation
+    coverage: Install; configure; operate; troubleshoot; maintain after exact pump selection
+    access: Official portal / variant-specific
+    verification: Official Wilo URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://wilo.com/ae/en/Local-Information/United-Arab-Emirates/
+  - https://wilo.com/ie/en/Local-Information/Downloads/
+  notes: Use exact pump type for manuals, wiring and maintenance instructions.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0054
+  equipment_category: Rooftop packaged unit
+  equipment_family: Packaged DX rooftop
+  model_or_family: Carrier rooftop/package units
+  oem: Carrier
+  supplier: UTS Carrier / Carrier UAE
+  provider_type: OEM/local joint venture provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Carrier UAE contact evidence captured
+  supplier_website: https://www.carrier.com/commercial/en/ae/contact-us/
+  product_page: https://www.carrier.com/commercial/en/ae/products/
+  manual:
+    url: https://www.carrier.com/commercial/en/us/literature/
+    type: Literature portal / product documentation
+    coverage: Operate; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official vendor portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.carrier.com/commercial/en/ae/contact-us/
+  - https://www.carrier.com/commercial/en/us/literature/
+  notes: Rooftop packaged units require exact model and option set for correct manual.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0055
+  equipment_category: Rooftop packaged unit
+  equipment_family: Packaged DX rooftop
+  model_or_family: Precedent 3 to 25 tons
+  oem: Trane
+  supplier: Trane Middle East / local UAE offices
+  provider_type: OEM regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Trane literature and UAE contact evidence found
+  supplier_website: https://www.trane.com/commercial/middle-east/ae/en.html
+  product_page: https://www.trane.com/commercial/north-america/us/en/products-systems/equipment/unitary/rooftop-systems.html
+  manual:
+    url: https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/unitary/rooftop-systems/precedent-3-to-25-tons/RT-SVX075A-EN_12022022.pdf
+    type: Installation, operation and maintenance manual
+    coverage: Install; operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: RT-SVX075A-EN / 2022-12-02
+    language: English
+  confidence: High
+  sources:
+  - https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/unitary/rooftop-systems/precedent-3-to-25-tons/RT-SVX075A-EN_12022022.pdf
+  - https://www.trane.com/getyourliterature/manuals.aspx?creditJobID=1502278
+  notes: Manual is for Precedent family and useful as packaged rooftop operating baseline.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0056
+  equipment_category: Rooftop packaged unit
+  equipment_family: Packaged DX rooftop
+  model_or_family: Trosten rooftop/package units
+  oem: Trosten Industries
+  supplier: Trosten Industries UAE
+  provider_type: Local GCC manufacturer/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Trosten product portfolio captured
+  supplier_website: https://www.trosten-industries.com/
+  product_page: https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  confidence: Medium
+  sources:
+  - https://www.trosten-industries.com/air-conditioning-ventilation-products-uae/
+  notes: Custom/package unit manual not found publicly in source pack.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0057
+  equipment_category: Smoke / fire ventilation
+  equipment_family: Life-safety HVAC
+  model_or_family: Systemair smoke exhaust / pressurisation fan families
+  oem: Systemair
+  supplier: Systemair UAE
+  provider_type: OEM regional office/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Systemair UAE offices and customer portal captured
+  supplier_website: https://www.systemair.com/en-ae/contact/our-offices
+  product_page: https://www.systemair.com/en-ae
+  manual:
+    url: https://qr.systemair.com/customer-portal/
+    type: Customer portal / unit-specific documentation
+    coverage: Install; operate; test; maintain after product lookup
+    access: Official portal / variant-specific
+    verification: Official portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.systemair.com/en-ae/contact/our-offices
+  - https://qr.systemair.com/customer-portal/
+  notes: For life-safety equipment, manual must be paired with Civil Defense approved testing and cause/effect documents.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0058
+  equipment_category: Sound attenuator
+  equipment_family: Duct acoustic equipment
+  model_or_family: TROX / regional sound attenuator category
+  oem: Multiple OEMs
+  supplier: Project suppliers in UAE
+  provider_type: Equipment category / multi-supplier
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX direct installation manual captured
+  supplier_website: https://www.trox.ae/
+  product_page: https://cdn.trox.de/ab639e4acd4dd457/ede9daedf276/XS_MS_XK_MK_RK_IM_A00000090240_V2_2023_03_GB_en.pdf
+  manual:
+    url: https://cdn.trox.de/ab639e4acd4dd457/ede9daedf276/XS_MS_XK_MK_RK_IM_A00000090240_V2_2023_03_GB_en.pdf
+    type: Representative public installation manual
+    coverage: Install; inspect; maintain
+    access: Public direct PDF
+    verification: Representative official manual URL captured
+    version: V2 / 2023-03
+    language: English
+  confidence: Medium
+  sources:
+  - https://cdn.trox.de/ab639e4acd4dd457/ede9daedf276/XS_MS_XK_MK_RK_IM_A00000090240_V2_2023_03_GB_en.pdf
+  notes: Representative category row for sound attenuators.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0059
+  equipment_category: Sound attenuator
+  equipment_family: Duct acoustic equipment
+  model_or_family: XS / MS / XK / MK / RK sound attenuators
+  oem: TROX
+  supplier: TROX Middle East / UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX UAE documentation/contact map captured
+  supplier_website: https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  product_page: https://www.trox.ae/
+  manual:
+    url: https://cdn.trox.de/ab639e4acd4dd457/ede9daedf276/XS_MS_XK_MK_RK_IM_A00000090240_V2_2023_03_GB_en.pdf
+    type: Installation manual
+    coverage: Install; maintain
+    access: Public direct PDF
+    verification: Official vendor CDN URL captured
+    version: V2 / 2023-03
+    language: English
+  confidence: High
+  sources:
+  - https://cdn.trox.de/ab639e4acd4dd457/ede9daedf276/XS_MS_XK_MK_RK_IM_A00000090240_V2_2023_03_GB_en.pdf
+  notes: Direct TROX installation manual captured for sound attenuator range.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0060
+  equipment_category: Variable frequency drive
+  equipment_family: Motor control / drives
+  model_or_family: Danfoss HVAC drive documentation
+  oem: Danfoss
+  supplier: Danfoss Middle East supplier route
+  provider_type: Drives OEM/provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Danfoss official technical documentation and manual captured
+  supplier_website: https://www.danfoss.com/
+  product_page: https://www.danfoss.com/en/about-danfoss/our-businesses/drives/drives-technical-documentation/
+  manual:
+    url: https://assets.danfoss.com/documents/latest/271401/AQ361181455131en-US0801.pdf
+    type: Instruction / operating manual
+    coverage: Install; configure; operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official Danfoss assets URL captured
+    version: AQ361181455131en-US0801
+    language: English
+  confidence: High
+  sources:
+  - https://www.danfoss.com/en/about-danfoss/our-businesses/drives/drives-technical-documentation/
+  - https://assets.danfoss.com/documents/latest/271401/AQ361181455131en-US0801.pdf
+  notes: HVAC VFD documentation captured; exact drive family and firmware must be matched.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0061
+  equipment_category: VAV terminal unit
+  equipment_family: Air terminal / controls
+  model_or_family: VAV terminal units
+  oem: Trane
+  supplier: Trane Middle East / local UAE offices
+  provider_type: OEM regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Trane literature portal evidence found
+  supplier_website: https://www.trane.com/commercial/middle-east/ae/en.html
+  product_page: https://www.trane.com/commercial/north-america/us/en/products-systems/equipment/air-handling/terminal-devices.html
+  manual:
+    url: https://www.trane.com/content/dam/Trane/Commercial/lar/es/product-systems/catalog/VAV-SVX08ABEN_12132024.pdf
+    type: Installation, operation and maintenance manual
+    coverage: Install; operate; configure; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: VAV-SVX08ABEN / 2024-12-13
+    language: English
+  confidence: High
+  sources:
+  - https://www.trane.com/content/dam/Trane/Commercial/lar/es/product-systems/catalog/VAV-SVX08ABEN_12132024.pdf
+  notes: VAV manual captured; exact controller type and BAS interface must be mapped per project.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0062
+  equipment_category: VAV terminal unit
+  equipment_family: Air terminal / controls
+  model_or_family: TROX VAV terminal units
+  oem: TROX
+  supplier: TROX Middle East / UAE
+  provider_type: OEM regional provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: TROX UAE documentation/contact map captured
+  supplier_website: https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  product_page: https://www.trox.ae/
+  manual:
+    url: https://www.trox.ae/en/downloads/
+    type: Official download library / model-specific
+    coverage: Install; configure; operate; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official download/library route captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.trox.de/en/downloads/220f4333baca744c/trox_ae_map1.pdf
+  notes: VAV documentation depends on controller and actuator configuration.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0063
+  equipment_category: VRF indoor unit
+  equipment_family: DX VRF terminal
+  model_or_family: Samsung DVM indoor/cassette units
+  oem: Samsung
+  supplier: Samsung Gulf / UAE Business
+  provider_type: OEM regional product provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Samsung UAE business product and enterprise support pages captured
+  supplier_website: https://www.samsung.com/ae/business/
+  product_page: https://www.samsung.com/ae/business/system-air-conditioners/vrf-system/sac-dvm-tkam100fnkdeh-tk/
+  manual:
+    url: https://www.samsung.com/ae/business/support/enterprise-service/system-air-conditioners/
+    type: Enterprise support / model-specific documents
+    coverage: Install; operate; configure; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official support/product URL captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.samsung.com/ae/business/system-air-conditioners/vrf-system/sac-dvm-tkam100fnkdeh-tk/
+  - https://www.samsung.com/ae/business/support/enterprise-service/system-air-conditioners/
+  notes: Product page captured for DVM terminal family; manual path through Samsung support.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0064
+  equipment_category: VRF outdoor unit
+  equipment_family: DX VRF
+  model_or_family: Multi V 5 LGRED outdoor units
+  oem: LG
+  supplier: LG UAE / LG Business HVAC
+  provider_type: OEM regional product provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: LG UAE business product page and manuals captured
+  supplier_website: https://www.lg.com/ae/business
+  product_page: https://www.lg.com/ae/business/hvac/commercial-solutions/vrf-system/outdoor-unit/multi-v-5
+  manual:
+    url: https://media.us.lg.com/m/2062697d45bfdcd0/original/IM_MULTI-V-5-LGRED-Outdoor-Unit-Installation-Manual_06_24-pdf.pdf
+    type: Installation manual
+    coverage: Install; configure; maintain
+    access: Public direct PDF
+    verification: Official/vendor media URL captured
+    version: 2024-06
+    language: English
+  confidence: High
+  sources:
+  - https://media.us.lg.com/m/2062697d45bfdcd0/original/IM_MULTI-V-5-LGRED-Outdoor-Unit-Installation-Manual_06_24-pdf.pdf
+  - https://www.lg.com/ae/business/hvac/commercial-solutions/vrf-system/outdoor-unit/multi-v-5
+  notes: Installation manual captured for LG Multi V 5 LGRED outdoor unit family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0065
+  equipment_category: VRF outdoor unit
+  equipment_family: DX VRF
+  model_or_family: Multi V 5 outdoor units
+  oem: LG
+  supplier: LG UAE / LG Business HVAC
+  provider_type: OEM regional product provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: LG UAE business product page and manuals captured
+  supplier_website: https://www.lg.com/ae/business
+  product_page: https://www.lg.com/ae/business/hvac/commercial-solutions/vrf-system/outdoor-unit/multi-v-5
+  manual:
+    url: https://media.us.lg.com/m/532a1f0c47275b65/original/OM_MultiV_5_OutdoorUnits-pdf.pdf
+    type: Operation manual
+    coverage: Operate; maintain; basic troubleshooting
+    access: Public direct PDF
+    verification: Official/vendor media URL captured
+    version: Operation manual
+    language: English
+  confidence: High
+  sources:
+  - https://www.lg.com/ae/business/hvac/commercial-solutions/vrf-system/outdoor-unit/multi-v-5
+  - https://media.us.lg.com/m/532a1f0c47275b65/original/OM_MultiV_5_OutdoorUnits-pdf.pdf
+  notes: Operation manual captured; installation manual also available in separate row.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0066
+  equipment_category: VRF outdoor unit
+  equipment_family: DX VRF
+  model_or_family: DVM S2 VRF outdoor units
+  oem: Samsung
+  supplier: Samsung Gulf / UAE Business
+  provider_type: OEM regional product provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Samsung UAE business product and enterprise support pages captured
+  supplier_website: https://www.samsung.com/ae/business/
+  product_page: https://www.samsung.com/ae/business/system-air-conditioners/vrf-system/dvm-s2-am9000a-am140axvcnh-id/
+  manual:
+    url: https://www.samsung.com/ae/business/support/enterprise-service/system-air-conditioners/
+    type: Enterprise support / model-specific documents
+    coverage: Operate; configure; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official support/product URL captured
+    version: Variant-specific
+    language: English
+  confidence: Medium
+  sources:
+  - https://www.samsung.com/ae/business/system-air-conditioners/vrf-system/dvm-s2-am9000a-am140axvcnh-id/
+  - https://www.samsung.com/ae/business/support/enterprise-service/system-air-conditioners/
+  notes: Samsung UAE product page captured; manual retrieval may require business support path or exact model.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0067
+  equipment_category: VRV / VRF indoor unit
+  equipment_family: DX indoor terminal
+  model_or_family: FXMQ-A concealed ducted indoor unit
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: UAE sales network/office evidence found
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/installation-manuals/ac/vrv/fxmq-a/FXMQ-A_Installation.Operation%20manual_3PEN701545-1C_English.pdf
+    type: Installation and operation manual
+    coverage: Install; operate; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: 3PEN701545-1C
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/installation-manuals/ac/vrv/fxmq-a/FXMQ-A_Installation.Operation%20manual_3PEN701545-1C_English.pdf
+  notes: Public manual captured for ducted indoor VRV terminal unit.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0068
+  equipment_category: VRV / VRF outdoor unit
+  equipment_family: DX multi-split / VRV
+  model_or_family: RXYSQ6TYFK VRV outdoor unit
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: UAE sales network/office evidence found
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/installation-manuals/ac/vrv/rxysq-tyfk/RXYSQ6TYFK_4PEN524881-1_2018_02_Installation%20and%20operation%20manual_English.pdf
+    type: Installation and operation manual
+    coverage: Install; operate; configure basics; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: 2018-02 / 4PEN524881-1
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/installation-manuals/ac/vrv/rxysq-tyfk/RXYSQ6TYFK_4PEN524881-1_2018_02_Installation%20and%20operation%20manual_English.pdf
+  notes: Useful for Daikin VRV outdoor-unit operation and installation baseline.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0069
+  equipment_category: Water-cooled centrifugal chiller
+  equipment_family: Chiller
+  model_or_family: 19XR centrifugal chiller
+  oem: Carrier
+  supplier: UTS Carrier / Carrier UAE
+  provider_type: OEM/local joint venture provider
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Carrier UAE contact page and product pages captured
+  supplier_website: https://www.carrier.com/commercial/en/ae/contact-us/
+  product_page: https://www.carrier.com/commercial/en/ae/products/commercial/chillers/19xr/
+  manual:
+    url: https://www.carrier.com/commercial/en/us/literature/
+    type: Literature portal / product documentation
+    coverage: Operate; configure; troubleshoot; maintain after exact literature lookup
+    access: Official portal / variant-specific
+    verification: Official vendor portal URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.carrier.com/commercial/en/ae/products/commercial/chillers/19xr/
+  - https://www.carrier.com/commercial/en/us/literature/
+  - https://www.carrier.com/commercial/en/ae/contact-us/
+  notes: Product page is UAE-specific; detailed manuals normally retrieved via Carrier literature portal.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0070
+  equipment_category: Water-cooled centrifugal chiller
+  equipment_family: Chiller
+  model_or_family: DWDC / DWSC centrifugal chiller
+  oem: Daikin
+  supplier: Daikin Middle East and Africa
+  provider_type: OEM direct regional office
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: Daikin MEA has UAE offices/sales network
+  supplier_website: https://www.daikinmea.com/en_US/contact.html
+  product_page: https://www.daikinmea.com/en_US/products.html
+  manual:
+    url: https://www.daikinmea.com/content/dam/document-library/operation-manuals/as/water-cooled-centrifugal-chillers/dwdc/DWDC%20C.DWSC%20C_Operation%20manual_D-EOMWC00803-21_04_English.pdf
+    type: Operation manual
+    coverage: Operate; maintain; basic troubleshooting
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: D-EOMWC00803-21_04
+    language: English
+  confidence: High
+  sources:
+  - https://www.daikinmea.com/content/dam/document-library/operation-manuals/as/water-cooled-centrifugal-chillers/dwdc/DWDC%20C.DWSC%20C_Operation%20manual_D-EOMWC00803-21_04_English.pdf
+  - https://www.daikinmea.com/en_US/contact.html
+  notes: Direct public operating manual captured for centrifugal chiller family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0071
+  equipment_category: Water-cooled centrifugal chiller
+  equipment_family: Chiller
+  model_or_family: EarthWise CTV / CVHE centrifugal liquid chiller
+  oem: Trane
+  supplier: Trane Middle East / local UAE offices
+  provider_type: OEM regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE/GCC
+  presence_evidence: UAE/Dubai/Abu Dhabi presence indicated in regional evidence
+  supplier_website: https://www.trane.com/commercial/middle-east/ae/en.html
+  product_page: https://www.trane.com/commercial/north-america/us/en/products-systems/equipment/chillers.html
+  manual:
+    url: https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/chillers/water-cooled/centrifugal-liquid/earthwise-ctv-simplex/CVHE-SVX02P-EN_10172019.pdf
+    type: Installation, operation and maintenance manual
+    coverage: Install; operate; troubleshoot; maintain
+    access: Public direct PDF
+    verification: Official vendor URL captured
+    version: CVHE-SVX02P-EN / 2019-10-17
+    language: English
+  confidence: High
+  sources:
+  - https://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/chillers/water-cooled/centrifugal-liquid/earthwise-ctv-simplex/CVHE-SVX02P-EN_10172019.pdf
+  notes: Public chiller IOM captured for Trane centrifugal family.
+  last_reviewed: '2026-06-08'
+- id: hvac-gcc-0072
+  equipment_category: Water-cooled chiller
+  equipment_family: Chiller
+  model_or_family: YORK water-cooled chiller families
+  oem: Johnson Controls / YORK
+  supplier: Johnson Controls Middle East
+  provider_type: OEM direct regional office/service
+  emirates_focus: Dubai, Abu Dhabi; UAE
+  presence_evidence: Johnson Controls Middle East contact and product documentation captured
+  supplier_website: https://me.johnsoncontrols.com/contact-us
+  product_page: https://www.johnsoncontrols.com/hvac-equipment/water-cooled-chillers
+  manual:
+    url: https://www.johnsoncontrols.com/services-and-support/product-documentation
+    type: Product documentation portal
+    coverage: Operate; configure; troubleshoot; maintain after exact model lookup
+    access: Official portal / variant-specific
+    verification: Official documentation URL captured
+    version: Variant-specific
+    language: English
+  confidence: High
+  sources:
+  - https://www.johnsoncontrols.com/hvac-equipment/water-cooled-chillers
+  - https://www.johnsoncontrols.com/services-and-support/product-documentation
+  - https://me.johnsoncontrols.com/contact-us
+  notes: Official product documentation route captured; direct PDF depends on exact YORK model.
+  last_reviewed: '2026-06-08'

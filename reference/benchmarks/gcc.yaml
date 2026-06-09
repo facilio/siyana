@@ -1,0 +1,41 @@
+# GCC energy benchmarks — INDICATIVE, community-maintained. Not measured values.
+# Synthesised from public methodology and regional studies; refine via PRs with sources.
+# Cooling EUI = annual cooling electricity per m² of conditioned floor area.
+cdd_base_c: 18
+# Reference annual cooling-degree-days (base 18 °C) for a typical GCC city (e.g. Dubai/Riyadh).
+# The estimator scales these EUI figures by (live period CDD ÷ this reference).
+reference_annual_cdd: 3300
+building_types:
+  office:
+    cooling_eui_kwh_m2_yr: { typical: 120, low: 90, high: 160 }
+    cooling_load_w_per_m2: 120
+    note: Cooling dominates total load in GCC offices; high glazing and long hours push the upper end.
+  retail:
+    cooling_eui_kwh_m2_yr: { typical: 150, low: 110, high: 220 }
+    cooling_load_w_per_m2: 150
+    note: High internal gains (lighting, people, extended trading hours) raise cooling demand.
+  hotel:
+    cooling_eui_kwh_m2_yr: { typical: 140, low: 100, high: 200 }
+    cooling_load_w_per_m2: 130
+    note: 24/7 operation and fresh-air/humidity loads keep cooling high year-round.
+  residential:
+    cooling_eui_kwh_m2_yr: { typical: 90, low: 60, high: 130 }
+    cooling_load_w_per_m2: 90
+    note: Apartments/villas; varies widely with envelope quality and occupancy.
+  hospital:
+    cooling_eui_kwh_m2_yr: { typical: 200, low: 150, high: 280 }
+    cooling_load_w_per_m2: 160
+    note: High fresh-air rates, strict IAQ, and 24/7 critical operation drive intensity up.
+  mall:
+    cooling_eui_kwh_m2_yr: { typical: 170, low: 120, high: 240 }
+    cooling_load_w_per_m2: 150
+    note: Large common areas, high footfall and lighting; central plant.
+  warehouse:
+    cooling_eui_kwh_m2_yr: { typical: 50, low: 25, high: 90 }
+    cooling_load_w_per_m2: 60
+    note: Often partially conditioned; depends heavily on whether ambient or comfort-cooled.
+sources:
+  - https://www.ashrae.org/technical-resources (ASHRAE Standard 90.1 — energy methodology)
+  - https://www.cibse.org/ (CIBSE TM46 — energy benchmarks methodology)
+  - "Regional energy-efficiency programmes (e.g. Dubai's Al Sa'fat, Abu Dhabi Estidama, Saudi SEEC) — public summaries"
+last_reviewed: "2026-06-08"

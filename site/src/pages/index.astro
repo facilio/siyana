@@ -1,0 +1,388 @@
+---
+import Base from "../layouts/Base.astro";
+import BuildingBrain from "../components/BuildingBrain.astro";
+import { getStats, getBrands } from "../lib/data.ts";
+
+const stats = getStats();
+const brands = getBrands();
+
+const GITHUB = "https://github.com/facilio/siyana";
+const NPM = "https://www.npmjs.com/package/siyana";
+const NPX = "npx siyana";
+
+const pillars = [
+  {
+    name: "Equipment & brands",
+    status: "live",
+    desc: "Specs, PPM checklists and fault diagnosis for HVAC, electrical & plumbing — organised by category → brand → model, cited to standards and the OEMs' official manuals.",
+  },
+  {
+    name: "Services",
+    status: "planned",
+    desc: "Hard & soft services — housekeeping, glass cleaning, fire & life-safety, BMS — with scope, best practice and the tools/materials each needs.",
+  },
+  {
+    name: "Resources",
+    status: "planned",
+    desc: "FM roles — supervisor, HVAC technician, plumber… — with competencies, experience levels and indicative market rates.",
+  },
+  {
+    name: "Benchmarks",
+    status: "planned",
+    desc: "By facility type — office, industrial, healthcare, retail — maintenance frequencies and performance benchmarks to sense-check a plan.",
+  },
+];
+
+const tools = [
+  {
+    name: "list_asset_categories",
+    desc: "See what the knowledge base covers.",
+    examples: ["Which trades and equipment do you cover for the Gulf?", "What can you help my FM team with?"],
+  },
+  {
+    name: "search_assets",
+    desc: "Find equipment by keyword, brand or model.",
+    examples: ["We inherited a tower with Grundfos booster sets — what's covered?", "List every plumbing asset you know."],
+  },
+  {
+    name: "get_asset_spec",
+    desc: "Specs + cited brand/model sheets & manuals.",
+    examples: ["What refrigerant and capacity range does a Daikin VRV IV run on?", "Which brands of air-cooled chiller do you know?"],
+  },
+  {
+    name: "get_ppm_schedule",
+    desc: "Region-tuned PPM tasks & frequencies.",
+    examples: ["Build a quarterly PPM checklist for an AHU in Dubai.", "How often should cooling-tower fill be cleaned here, and why?"],
+  },
+  {
+    name: "get_fault_resolution",
+    desc: "Symptom → likely causes → fix → safety.",
+    examples: ["Our chiller trips on high pressure every afternoon in July — what do I check?", "Water's dripping under an FCU — likely cause and fix?"],
+  },
+  {
+    name: "get_weather",
+    desc: "Live conditions, forecast & dust for a site.",
+    examples: ["What's the dust and heat outlook this week before we plan filter rounds?", "Is it safe to clean a rooftop cooling tower on Thursday?"],
+  },
+  {
+    name: "get_maintenance_advisory",
+    desc: "Forecast → proactive maintenance actions.",
+    examples: ["A sandstorm's forecast — what should my team prioritise this week?", "Any weather risk to my chillers and AHUs in the next 7 days?"],
+  },
+  {
+    name: "estimate_cooling_energy",
+    desc: "Climate-aware cooling estimate (a helper, not a bill).",
+    examples: ["Roughly how much cooling energy does a 10,000 sqft Dubai office use in summer?", "Ballpark the annual cooling load for a hospital."],
+  },
+];
+
+const configs = {
+  "Claude Desktop": `{
+  "mcpServers": {
+    "siyana": { "command": "npx", "args": ["-y", "siyana"] }
+  }
+}`,
+  "Claude Code": `claude mcp add siyana -- npx -y siyana`,
+  Cursor: `{
+  "mcpServers": {
+    "siyana": { "command": "npx", "args": ["-y", "siyana"] }
+  }
+}`,
+};
+const configTabs = Object.keys(configs);
+---
+
+<Base>
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 border-b border-border/60 bg-ink/80 backdrop-blur">
+    <nav class="container-x flex h-16 items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 font-semibold tracking-tight">
+        <img src="/favicon.svg" alt="" width="26" height="26" />
+        Siyana <span class="font-arabic text-dune text-lg">صِيانة</span>
+      </a>
+      <div class="hidden items-center gap-7 text-sm text-muted md:flex">
+        <a href="#knowledge" class="hover:text-sand">Knowledge</a>
+        <a href="#tools" class="hover:text-sand">Tools</a>
+        <a href="#install" class="hover:text-sand">Install</a>
+        <a href="#ecosystem" class="hover:text-sand">Contribute</a>
+        <a href={GITHUB} class="hover:text-sand">GitHub</a>
+      </div>
+      <a href="#install" class="btn-primary !px-4 !py-2">Get started</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-heat-haze">
+    <div class="container-x grid items-center gap-12 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-28">
+      <div>
+        <span class="chip mb-5"><span class="text-dune">●</span> Open-source MCP server</span>
+        <h1 class="text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+          The facilities-management<br /><span class="text-dune">brain</span> for your AI.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-muted">
+          Siyana gives your AI assistant real facilities-management know-how — <span class="text-sand">equipment specs, fault fixes and PPM schedules</span> across HVAC, electrical and plumbing, tuned for the Gulf. It's an open <span class="text-sand">knowledge base</span>, not a platform to log into.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#knowledge" class="btn-primary">Explore the knowledge →</a>
+          <a href={GITHUB} class="btn-ghost">View on GitHub</a>
+        </div>
+        <div class="mt-6 flex max-w-md items-center gap-3 rounded-xl border border-border bg-ink-2 px-4 py-3 font-mono text-sm">
+          <span class="text-teal">$</span>
+          <code class="flex-1 text-sand">{NPX}</code>
+          <button data-copy={NPX} class="rounded-md border border-border px-2 py-1 text-xs text-muted hover:border-dune/60 hover:text-sand">Copy</button>
+        </div>
+      </div>
+
+      <!-- animated living building -->
+      <div class="relative">
+        <BuildingBrain brands={brands} />
+        <p class="mx-auto mt-3 max-w-sm text-center font-mono text-xs leading-relaxed text-muted">Siyana knows your <span class="text-sand">equipment, systems, weather, best practices &amp; resources</span>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="border-y border-border/60 bg-ink-2/50">
+    <div class="container-x flex flex-wrap items-center justify-center gap-x-8 gap-y-3 py-5 text-sm text-muted">
+      <span class="chip">Open-source MCP server</span>
+      <span class="chip">Free · no API key</span>
+      <span class="chip">Works with Claude · Cursor · any MCP client</span>
+      <span class="chip">{stats.categories} categories · {stats.models} models · {stats.brands} brands</span>
+      <span class="chip">Apache-2.0 + CC BY 4.0</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM / SOLUTION -->
+  <section id="how" class="container-x py-20">
+    <div class="max-w-2xl">
+      <span class="eyebrow">The problem</span>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">FM knowledge is trapped in PDFs and people.</h2>
+      <p class="mt-4 text-muted">
+        Specs, fault fixes and the right maintenance frequency for <em>this</em> climate live in manuals, spreadsheets and tribal know-how. Siyana puts that knowledge one question away for your team — and keeps it growing.
+      </p>
+    </div>
+    <div class="mt-12 grid gap-4 sm:grid-cols-3">
+      <div class="card p-6"><div class="text-dune text-2xl">◇</div><h3 class="mt-3 font-semibold">Region-tuned</h3><p class="mt-2 text-sm text-muted">GCC heat, dust & hard-water realities baked into every PPM frequency and fault note — not generic global data.</p></div>
+      <div class="card p-6"><div class="text-teal text-2xl">⛆</div><h3 class="mt-3 font-semibold">Knowledge, not a platform</h3><p class="mt-2 text-sm text-muted">An open knowledge base your team taps through the AI they already use — nothing new to log into or operate.</p></div>
+      <div class="card p-6"><div class="text-sand text-2xl">⬡</div><h3 class="mt-3 font-semibold">Open & growing</h3><p class="mt-2 text-sm text-muted">A living knowledge base. Anyone can request or contribute equipment, brands, trades or regions.</p></div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section id="who" class="container-x py-20">
+    <span class="eyebrow">Who it's for</span>
+    <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">One FM brain — for people and products.</h2>
+    <p class="mt-3 max-w-2xl text-muted">Whether a human asks through their AI, or software calls it programmatically, Siyana is the shared facilities-management knowledge layer underneath.</p>
+    <div class="mt-10 grid gap-4 lg:grid-cols-3">
+      <div class="card p-6">
+        <div class="text-2xl">👷</div>
+        <h3 class="mt-3 font-semibold text-sand">FM teams & people</h3>
+        <p class="mt-2 text-sm text-muted">Technicians, supervisors and facility managers ask their AI on site — <em>"PPM for this chiller?"</em>, <em>"why is it tripping?"</em> — and get cited, region-tuned answers without digging through manuals.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-2xl text-teal">▤</div>
+        <h3 class="mt-3 font-semibold text-sand">CMMS / CAFM software</h3>
+        <p class="mt-2 text-sm text-muted">Product teams plug Siyana in as the FM knowledge layer — enrich asset onboarding, work orders and PPM libraries with open, cited, region-tuned data. No in-house data team required.</p>
+      </div>
+      <div class="card p-6">
+        <div class="text-2xl text-dune">✦</div>
+        <h3 class="mt-3 font-semibold text-sand">CMMS AI agents & copilots</h3>
+        <p class="mt-2 text-sm text-muted">Maintenance copilots and agents call Siyana's MCP tools to ground their answers in real FM knowledge — the domain brain behind the bot, over standard MCP.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S IN THE KNOWLEDGE -->
+  <section id="knowledge" class="border-y border-border/60 bg-ink-2/40 py-20">
+    <div class="container-x">
+      <span class="eyebrow">What's inside</span>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">A growing FM knowledge base</h2>
+      <p class="mt-3 max-w-2xl text-muted">Equipment and brands are live today; services, resources and benchmarks are rolling out — all region-scoped and community-grown.</p>
+
+      <!-- brands -->
+      <div class="mt-10">
+        <div class="text-xs font-mono uppercase tracking-[0.2em] text-muted">HVAC brands in the knowledge</div>
+        <div class="mt-4 flex flex-wrap gap-2.5">
+          {brands.map((b) => (
+            <span class="rounded-lg border border-border bg-surface px-3 py-1.5 text-sm text-sand">{b}</span>
+          ))}
+        </div>
+        <p class="mt-3 text-sm text-muted">…and growing. Each model links to its OEM's official manual. <a href={`${GITHUB}/issues/new?template=02-add-brand.yml`} class="text-dune hover:underline">Missing a brand? Add it →</a></p>
+      </div>
+
+      <!-- pillars -->
+      <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {pillars.map((p) => (
+          <div class:list={["card p-6", p.status === "live" ? "border-dune/40" : ""]}>
+            <div class="flex items-center justify-between">
+              <h3 class="font-semibold text-sand">{p.name}</h3>
+              <span class:list={["rounded-full px-2 py-0.5 text-xs", p.status === "live" ? "bg-dune/15 text-dune" : "border border-border text-muted"]}>
+                {p.status === "live" ? "live" : "planned"}
+              </span>
+            </div>
+            <p class="mt-2 text-sm text-muted">{p.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools" class="container-x py-20">
+    <span class="eyebrow">What it does</span>
+    <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Helper tools — for real FM questions</h2>
+    <p class="mt-3 max-w-2xl text-muted">The kind of things your team actually asks on site, answered with cited, region-tuned guidance.</p>
+    <div class="mt-10 grid gap-4 sm:grid-cols-2">
+      {tools.map((t) => (
+        <div class="card p-5">
+          <code class="font-mono text-sm text-dune">{t.name}</code>
+          <p class="mt-2 text-sm text-muted">{t.desc}</p>
+          <ul class="mt-4 space-y-2">
+            {t.examples.map((e) => (
+              <li class="flex gap-2 text-sm">
+                <span class="mt-0.5 select-none text-teal">›</span>
+                <span class="italic text-sand/90">"{e}"</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <p class="mt-6 text-sm text-muted">The five knowledge tools work fully offline; the three weather tools add live context (disable with <code class="text-sand">SIYANA_OFFLINE=1</code>).</p>
+  </section>
+
+  <!-- WEATHER -->
+  <section class="border-y border-border/60 bg-ink-2/40 py-20">
+    <div class="container-x grid items-center gap-12 lg:grid-cols-2">
+      <div>
+        <span class="eyebrow">Weather-aware helper</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Static guidance, made situational.</h2>
+        <p class="mt-4 text-muted">Siyana reads the forecast and helps your team prioritise the right tasks before the weather hits.</p>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex gap-3"><span class="text-ember">▲</span> <span><b class="text-sand">48 °C heatwave next week</b> → bring condenser-coil cleaning forward; verify high-ambient operation.</span></li>
+          <li class="flex gap-3"><span class="text-dune">≋</span> <span><b class="text-sand">Dust event</b> → inspect & replace air filters early; clean fouling coils.</span></li>
+          <li class="flex gap-3"><span class="text-teal">≈</span> <span><b class="text-sand">High humidity</b> → clear condensate drains to prevent ceiling damage.</span></li>
+        </ul>
+      </div>
+      <div class="card p-5 font-mono text-sm">
+        <div class="text-muted">get_maintenance_advisory(<span class="text-sand">"Dubai"</span>)</div>
+        <div class="mt-3 rounded-lg border border-ember/30 bg-ember/5 p-4">
+          <div class="text-ember">⚠ Elevated dust (254 µg/m³)</div>
+          <div class="mt-1 text-muted">Sandstorm conditions — inspect/replace AHU & condenser filters early.</div>
+        </div>
+        <div class="mt-3 rounded-lg border border-teal/30 bg-teal/5 p-4">
+          <div class="text-teal">≈ High humidity (99%)</div>
+          <div class="mt-1 text-muted">Heavy condensate — clear FCU/AHU drain pans and traps.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGIONS -->
+  <section class="container-x py-20">
+    <div class="grid items-center gap-10 lg:grid-cols-2">
+      <div>
+        <span class="eyebrow">Regions & roadmap</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">GCC first. Built to go global.</h2>
+        <p class="mt-4 text-muted">Each region is its own dataset; scope a server with <code class="text-sand">SIYANA_REGION</code>. Adding a market is additive — a new folder, no rebrand.</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="rounded-xl border border-dune/50 bg-dune/10 px-4 py-2 font-mono text-sm text-sand">gcc ✓ live</span>
+        {["uk", "us", "anz", "eu"].map((r) => <span class="rounded-xl border border-border px-4 py-2 font-mono text-sm text-muted">{r} · soon</span>)}
+        <span class="rounded-xl border border-border px-4 py-2 font-mono text-sm text-muted">+ services · resources</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM -->
+  <section id="ecosystem" class="border-y border-border/60 bg-ink-2/40 py-20">
+    <div class="container-x">
+      <div class="max-w-2xl">
+        <span class="eyebrow">A living knowledge base</span>
+        <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Missing something? Request it.</h2>
+        <p class="mt-4 text-muted">Siyana grows with the FM community — no coding required. Open a templated issue and a contributor fills it; ships in the next release.</p>
+      </div>
+      <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {[
+          ["🧰 New equipment", "Equipment we don't cover yet", `${GITHUB}/issues/new?template=01-new-asset.yml`],
+          ["🏷️ Add a brand", "e.g. \"Add Trane HVAC equipment\"", `${GITHUB}/issues/new?template=02-add-brand.yml`],
+          ["🧱 New trade / service", "Fire, BMS, lifts, cleaning…", `${GITHUB}/issues/new?template=03-new-trade-or-service.yml`],
+          ["🌍 New region", "UK, US, ANZ, EU…", `${GITHUB}/issues/new?template=04-new-region.yml`],
+          ["🩹 Fix data", "Flag anything wrong or outdated", `${GITHUB}/issues/new?template=05-data-correction.yml`],
+          ["⭐ Star on GitHub", "Help others find it", GITHUB],
+        ].map(([t, d, href]) => (
+          <a href={href} class="card flex flex-col gap-1 p-5 transition hover:border-dune/50">
+            <span class="font-medium text-sand">{t}</span>
+            <span class="text-sm text-muted">{d}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section id="install" class="container-x py-20">
+    <div class="mx-auto max-w-3xl text-center">
+      <span class="eyebrow">Quickstart</span>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Add Siyana in 30 seconds</h2>
+      <p class="mt-4 text-muted">Node 18+. Runs over stdio, no key, no config.</p>
+    </div>
+    <div class="card mx-auto mt-10 max-w-3xl overflow-hidden">
+      <div class="flex border-b border-border bg-ink-2" role="tablist">
+        {configTabs.map((t, i) => (
+          <button class:list={["config-tab px-5 py-3 text-sm", i === 0 ? "text-sand" : "text-muted"]} data-tab={t}>{t}</button>
+        ))}
+      </div>
+      {configTabs.map((t, i) => (
+        <div class:list={["config-panel relative", i === 0 ? "" : "hidden"]} data-panel={t}>
+          <button data-copy={configs[t as keyof typeof configs]} class="absolute right-4 top-4 rounded-md border border-border px-2 py-1 text-xs text-muted hover:border-dune/60 hover:text-sand">Copy</button>
+          <pre class="overflow-x-auto p-5 font-mono text-sm text-sand"><code>{configs[t as keyof typeof configs]}</code></pre>
+        </div>
+      ))}
+    </div>
+    <p class="mx-auto mt-5 max-w-3xl text-center text-sm text-muted">Then ask: <span class="text-sand">"What's the PPM schedule for a Daikin VRV in Dubai?"</span></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-border/60">
+    <div class="container-x flex flex-col items-center gap-4 py-12 text-sm text-muted sm:flex-row sm:justify-between">
+      <div class="flex items-center gap-2.5">
+        <img src="/favicon.svg" alt="" width="22" height="22" />
+        <span>Siyana — an open-source project</span>
+        {/* Attribution ("Brought to you by Facilio") to be added once the project matures. */}
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+        <a href={GITHUB} class="hover:text-sand">GitHub</a>
+        <a href={NPM} class="hover:text-sand">npm</a>
+        <a href={`${GITHUB}/blob/main/CONTRIBUTING.md`} class="hover:text-sand">Contribute</a>
+        <span>Apache-2.0 · CC BY 4.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ---- copy buttons ----
+    document.querySelectorAll<HTMLButtonElement>("[data-copy]").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(btn.dataset.copy ?? "");
+        const prev = btn.textContent;
+        btn.textContent = "Copied ✓";
+        setTimeout(() => (btn.textContent = prev), 1400);
+      });
+    });
+
+    // ---- install tabs ----
+    const tabs = document.querySelectorAll<HTMLButtonElement>(".config-tab");
+    tabs.forEach((tab) =>
+      tab.addEventListener("click", () => {
+        const name = tab.dataset.tab;
+        tabs.forEach((t) => t.classList.toggle("text-sand", t === tab));
+        tabs.forEach((t) => t.classList.toggle("text-muted", t !== tab));
+        document.querySelectorAll<HTMLElement>(".config-panel").forEach((p) =>
+          p.classList.toggle("hidden", p.dataset.panel !== name),
+        );
+      }),
+    );
+
+  </script>
+</Base>

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Ideas & open-ended discussion
+    url: https://github.com/facilio/siyana/discussions
+    about: Not sure how to scope a request, or want to discuss the roadmap? Start a discussion.
+  - name: 📖 Contributing guide
+    url: https://github.com/facilio/siyana/blob/main/CONTRIBUTING.md
+    about: How to add or correct knowledge — and the one hard rule (no copyrighted text).

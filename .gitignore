@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+
+# builds / output
+dist/
+site/dist/
+.astro/
+
+# logs & caches
+*.log
+npm-debug.log*
+coverage/
+.vercel/
+
+# os / editor
+.DS_Store
+.claude/
+*.local

@@ -1,0 +1,54 @@
+name: "🧰 Request a new asset / equipment type"
+description: Ask for an equipment type that isn't covered yet (e.g. a centrifugal chiller, a fire pump).
+title: "[Asset] <trade>: <asset type>"
+labels: ["knowledge", "new-asset"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help Siyana grow! Request equipment that's missing. You don't need every detail — fill in what you can.
+        If you can write the full entry yourself, see [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) and open a PR instead.
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      description: Which region's dataset should this go in? (`gcc` is the one populated today.)
+      options: [gcc, uk, us, anz, eu, "other / not sure"]
+    validations:
+      required: true
+  - type: dropdown
+    id: trade
+    attributes:
+      label: Trade
+      options: [hvac, electrical, plumbing, "other (describe below)"]
+    validations:
+      required: true
+  - type: input
+    id: asset_type
+    attributes:
+      label: Asset / equipment type
+      placeholder: e.g. Magnetic-bearing centrifugal chiller
+    validations:
+      required: true
+  - type: textarea
+    id: brands
+    attributes:
+      label: Common brands / models in this region (optional)
+      placeholder: e.g. Daikin, Carrier, Trane, York …
+  - type: textarea
+    id: context
+    attributes:
+      label: What's different about this asset in this region?
+      placeholder: Heat, dust, hard water, humidity, local norms (e.g. DEWA/SASO/Civil Defence) …
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources we can cite (optional)
+      placeholder: Public manufacturer pages, standards by name/clause, regulator guidance. No copyrighted text, please.
+  - type: checkboxes
+    id: ip
+    attributes:
+      label: IP confirmation
+      options:
+        - label: I understand entries must be paraphrased and cited — no copyrighted manual text.
+          required: true

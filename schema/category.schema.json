@@ -1,0 +1,149 @@
+{
+  "$ref": "#/definitions/Category",
+  "definitions": {
+    "Category": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "trade": {
+          "type": "string",
+          "enum": [
+            "hvac",
+            "electrical",
+            "plumbing"
+          ]
+        },
+        "asset_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "default": []
+        },
+        "specifications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "minLength": 1
+              },
+              "value": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "key",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "ppm": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "task": {
+                "type": "string",
+                "minLength": 1
+              },
+              "frequency": {
+                "type": "string",
+                "minLength": 1
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              },
+              "standard_ref": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "task",
+              "frequency"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "common_faults": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "symptom": {
+                "type": "string",
+                "minLength": 1
+              },
+              "likely_causes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "resolution_steps": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              },
+              "safety_notes": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "symptom",
+              "likely_causes",
+              "resolution_steps"
+            ],
+            "additionalProperties": false
+          },
+          "default": []
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "last_reviewed": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "license": {
+          "type": "string",
+          "const": "CC-BY-4.0",
+          "default": "CC-BY-4.0"
+        }
+      },
+      "required": [
+        "id",
+        "trade",
+        "asset_type",
+        "sources",
+        "last_reviewed"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

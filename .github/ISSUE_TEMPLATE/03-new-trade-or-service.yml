@@ -1,0 +1,40 @@
+name: "🧱 Request a new trade or service category"
+description: Propose a whole new domain — e.g. fire & life-safety, BMS, lifts, or soft services like cleaning/security.
+title: "[Category] <name>"
+labels: ["knowledge", "new-category"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Siyana covers HVAC, electrical, and plumbing today. Use this to propose a new **trade**
+        (fire & life-safety, BMS/controls, vertical transport/lifts, …) or a new **service** domain
+        (soft services such as cleaning, security, landscaping, pest control). New categories may need
+        a small schema/code change, so a maintainer will scope it with you.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: ["Trade (hard service / equipment)", "Service (soft service)"]
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Category name
+      placeholder: e.g. Fire & Life-Safety, or Soft Services — Cleaning
+    validations:
+      required: true
+  - type: textarea
+    id: examples
+    attributes:
+      label: Example assets / services it would include
+      placeholder: |
+        Fire: fire pump, sprinkler system, fire alarm panel, smoke dampers …
+        Cleaning: SLA frequencies, manpower norms, consumable schedules …
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters for FM teams (and any region specifics)
+      placeholder: How would this help day-to-day? Any GCC/region norms that make it distinctive?

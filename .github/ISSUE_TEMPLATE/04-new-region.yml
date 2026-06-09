@@ -1,0 +1,30 @@
+name: "🌍 Request / start a new region dataset"
+description: Kick off a new region (e.g. UK, US, ANZ, EU) so Siyana can be scoped to it.
+title: "[Region] <region>"
+labels: ["knowledge", "new-region"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Each region is a self-contained dataset under `data/<region>/`. Today only `gcc` is populated.
+        Adding a region is additive — a new folder, no rebrand. Use this to coordinate seeding it.
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region to add
+      options: [uk, us, anz, eu, "other (propose a code)"]
+    validations:
+      required: true
+  - type: textarea
+    id: distinctives
+    attributes:
+      label: What makes maintenance different in this region?
+      description: Climate, water, regulations, common equipment, standards bodies.
+      placeholder: e.g. UK — temperate climate, F-Gas regs, SFG20 PPM basis, hard-water in the south-east …
+    validations:
+      required: true
+  - type: textarea
+    id: help
+    attributes:
+      label: Can you help seed it?
+      placeholder: Which trades/assets could you contribute first? Are you an FM practitioner in this region?

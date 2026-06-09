@@ -1,0 +1,47 @@
+name: "🏷️ Add a brand / manufacturer to existing assets"
+description: Add brand & model spec sheets to asset types we already cover (e.g. "Add Trane HVAC equipment").
+title: "[Brand] Add <brand> to <trade>"
+labels: ["knowledge", "add-brand"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the asset type exists but a brand's models are missing — e.g. we cover **Air-Cooled Chiller**
+        but not **Trane** units. List the brand and which asset types its models belong to.
+  - type: input
+    id: brand
+    attributes:
+      label: Brand / manufacturer
+      placeholder: e.g. Trane
+    validations:
+      required: true
+  - type: dropdown
+    id: region
+    attributes:
+      label: Region
+      options: [gcc, uk, us, anz, eu, "other / not sure"]
+    validations:
+      required: true
+  - type: textarea
+    id: assets
+    attributes:
+      label: Which asset types / models?
+      description: List the asset types and any specific models. Link existing asset ids if you know them.
+      placeholder: |
+        - Air-Cooled Chiller — Trane Sintesis (model: RTAF)
+        - AHU — Trane Performance Climate Changer
+        - VRF — Trane (model: …)
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources we can cite
+      placeholder: Public manufacturer product pages. Paraphrased specs only — no copyrighted datasheet text.
+  - type: checkboxes
+    id: ip
+    attributes:
+      label: IP confirmation
+      options:
+        - label: I understand specs must be paraphrased and cited — no copyrighted datasheet/manual text.
+          required: true

@@ -1,0 +1,26 @@
+name: Freshness check
+
+# Monthly sweep for asset entries overdue for review, so the "up to date" promise stays honest.
+on:
+  schedule:
+    - cron: "0 6 1 * *" # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+    inputs:
+      days:
+        description: Staleness threshold in days
+        default: "365"
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Report stale assets
+        run: npm run freshness -- --days=${{ github.event.inputs.days || '365' }}
+      # A follow-up step can parse `npm run freshness -- --json` and open/update a tracking issue.
+      # Left as a hook so forks can wire it to their own issue/notification workflow.

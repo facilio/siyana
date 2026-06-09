@@ -1,0 +1,21 @@
+Facilities-Management Knowledge Data — License
+================================================
+
+All content under the `data/` directory (the asset knowledge base: specifications,
+PPM schedules, fault-resolution guidance, GCC context, and citations) is licensed under the
+
+    Creative Commons Attribution 4.0 International License (CC BY 4.0)
+    https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material for any purpose, even commercially,
+provided you give appropriate credit to "The Siyana contributors" and indicate
+if changes were made.
+
+This data is GCC-tuned guidance synthesised from public manufacturer information and
+open industry standards. It is provided "AS IS", without warranty of any kind. It is
+not a substitute for the original equipment manufacturer's manual, a competent
+engineer's judgement, or compliance with local regulations. Always verify against the
+OEM documentation and applicable codes before acting.
+
+The software in this repository (everything outside `data/`) is licensed separately
+under the Apache License 2.0 — see the LICENSE file.

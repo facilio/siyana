@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#11161D"/><stop offset="1" stop-color="#0E1116"/></linearGradient>
+    <radialGradient id="haze" cx="50%" cy="0%" r="75%"><stop offset="0" stop-color="#E0A458" stop-opacity="0.20"/><stop offset="0.55" stop-color="#D2693C" stop-opacity="0.06"/><stop offset="1" stop-color="#E0A458" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+  <rect width="1080" height="1080" fill="url(#haze)"/>
+  
+    <g transform="translate(64,52)">
+      <g transform="scale(0.84375)">
+        <rect width="64" height="64" rx="14" fill="#0E1116"/>
+        <circle cx="32" cy="26" r="11" fill="#E0A458"/>
+        <path d="M10 44c6-7 12-7 18-3.5S40 47 54 40" fill="none" stroke="#5EC8C2" stroke-width="4" stroke-linecap="round"/>
+        <path d="M10 52c8-5 14-5 22-1.5S44 54 54 49" fill="none" stroke="#E7D8B4" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+      </g>
+      <text x="72" y="37" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="34" fill="#E7EBF0">Siyana</text>
+      <text x="216" y="37" font-family="'Noto Naskh Arabic', serif" font-size="26" fill="#E0A458">صِيانة</text>
+    </g>
+  <text x="540" y="452.8" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="86" fill="#E7EBF0" letter-spacing="-1">The facilities</text>
+<text x="540" y="545.6800000000001" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="86" fill="#E7EBF0" letter-spacing="-1"><tspan fill="#E0A458">brain</tspan> for your AI.</text><text x="540" y="720" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#9AA6B3">Open-source MCP · npx siyana</text>
+  
+    <line x1="64" y1="966" x2="1016" y2="966" stroke="#2A3540" stroke-width="1.5"/>
+    <text x="64" y="1012" font-family="'JetBrains Mono', monospace" font-size="30" fill="#E7D8B4">siyana.dev</text>
+    <text x="1016" y="1012" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="26" fill="#9AA6B3">Open-source MCP</text>
+</svg>

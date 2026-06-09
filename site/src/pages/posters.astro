@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+import posters from "../lib/posters.json";
+---
+
+<Base title="Siyana — poster kit" description="Shareable Siyana poster concepts for LinkedIn and outdoor.">
+  <header class="sticky top-0 z-40 border-b border-border/60 bg-ink/80 backdrop-blur">
+    <nav class="container-x flex h-16 items-center justify-between">
+      <a href="/" class="flex items-center gap-2.5 font-semibold tracking-tight">
+        <img src="/favicon.svg" alt="" width="26" height="26" />
+        Siyana <span class="font-arabic text-dune text-lg">صِيانة</span>
+      </a>
+      <a href="/" class="text-sm text-muted hover:text-sand">← Home</a>
+    </nav>
+  </header>
+
+  <section class="container-x py-16">
+    <span class="eyebrow">Poster kit</span>
+    <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">20 poster concepts</h1>
+    <p class="mt-3 max-w-2xl text-muted">
+      1080×1080, ready for LinkedIn and outdoor. Click any poster to open the SVG, then export to PNG
+      before posting (LinkedIn needs a raster image). Desert-dusk brand, no logos to license.
+    </p>
+
+    <div class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {posters.map((p, i) => (
+        <a href={p.file} target="_blank" class="card overflow-hidden transition hover:border-dune/50">
+          <img src={p.file} alt={p.title} width="1080" height="1080" loading="lazy" class="w-full" />
+          <div class="flex items-center justify-between gap-3 px-4 py-3 text-sm">
+            <span class="text-muted">#{String(i + 1).padStart(2, "0")}</span>
+            <span class="truncate text-sand">{p.title}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
