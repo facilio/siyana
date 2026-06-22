@@ -56,6 +56,10 @@ Three trades, ~16 core asset types, each with **specifications**, **GCC-tuned PP
 | `estimate_cooling_energy` | Indicative cooling kWh (and optional cost / peak TR) for a space, using live degree-days × a cited region/building-type benchmark. |
 | `get_maintenance_advisory` | Turns the forecast into proactive maintenance actions (heatwave → coil clean, dust → filters), optionally tied to a specific asset's PPM tasks. |
 
+**Also exposed over MCP:**
+- **Resources** — each category is browsable at `siyana://<region>/<id>` (e.g. `siyana://gcc/hvac-ahu`), rendered as Markdown (specs · PPM · faults · manuals).
+- **Prompts** — `ppm-plan`, `fault-triage`, `spec-lookup` — ready-made templates that orient an assistant (or a CMMS agent) to use the tools well.
+
 ---
 
 ## Quick start

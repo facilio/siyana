@@ -6,6 +6,8 @@ import { buildTools } from "./tools/index.js";
 import { DEFAULT_REGION, RegionSchema } from "./schema.js";
 import { loadBenchmarks } from "./benchmarks.js";
 import { createOpenMeteoClient } from "./weather/open-meteo.js";
+import { buildAssetResources } from "./resources.js";
+import { PROMPTS } from "./prompts.js";
 
 const VERSION = "0.1.0";
 
@@ -46,10 +48,30 @@ async function main(): Promise<void> {
     );
   }
 
+  // Resources — each category browsable at siyana://<region>/<id>.
+  const resources = buildAssetResources(store);
+  for (const r of resources) {
+    server.resource(
+      r.name,
+      r.uri,
+      { description: r.description, mimeType: "text/markdown" },
+      async (uri) => ({ contents: [{ uri: uri.href, mimeType: "text/markdown", text: r.render() }] }),
+    );
+  }
+
+  // Prompts — ready-made templates (PPM plan, fault triage, spec lookup).
+  for (const p of PROMPTS) {
+    server.prompt(p.name, p.description, p.args, async (args: Record<string, unknown>) => ({
+      messages: [
+        { role: "user", content: { type: "text", text: p.build(args as Record<string, string | undefined>) } },
+      ],
+    }));
+  }
+
   // stderr only — stdout is reserved for the MCP stdio protocol.
   process.stderr.write(
     `siyana v${VERSION} ready — ${store.assets.length} assets, region "${defaultRegion}" (available: ${store.availableRegions.join(", ")}); ` +
-      `${tools.length} tools${offline ? " (offline: weather disabled)" : ", weather enabled"}.\n`,
+      `${tools.length} tools, ${resources.length} resources, ${PROMPTS.length} prompts${offline ? " (offline: weather disabled)" : ", weather enabled"}.\n`,
   );
 
   const transport = new StdioServerTransport();
