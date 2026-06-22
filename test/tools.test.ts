@@ -45,12 +45,13 @@ describe("data + tooling", () => {
 });
 
 describe("list_asset_categories", () => {
-  it("returns the three trades with assets", () => {
+  it("returns the trades with assets", () => {
     const { data } = call("list_asset_categories");
     expect(data.trades.map((t: { trade: string }) => t.trade)).toEqual([
       "hvac",
       "electrical",
       "plumbing",
+      "fire",
     ]);
     expect(data.total_assets).toBe(store.assets.length);
   });

@@ -6,7 +6,7 @@ import { z } from "zod";
  * and the loader validates every YAML file against it at startup (see data-loader.ts).
  */
 
-export const TRADES = ["hvac", "electrical", "plumbing"] as const;
+export const TRADES = ["hvac", "electrical", "plumbing", "fire"] as const;
 export const TradeSchema = z.enum(TRADES);
 export type Trade = z.infer<typeof TradeSchema>;
 

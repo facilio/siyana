@@ -28,15 +28,16 @@ Prefer to contribute the knowledge directly? Even better — see [CONTRIBUTING.m
 
 ## What it covers (v1)
 
-Three trades, ~16 core asset types, each with **specifications**, **GCC-tuned PPM schedules**, **fault-resolution guides**, and **cited sources**:
+Four trades, 30+ asset categories, each with **specifications**, **GCC-tuned PPM schedules**, **fault-resolution guides**, and **cited sources**:
 
 | Trade | Assets |
 |-------|--------|
-| **HVAC** | Air-cooled chiller, AHU, FAHU, VRF/VRV, split AC, cooling tower, fan coil unit |
+| **HVAC** | Air-/water-cooled chiller, AHU, FAHU, VRF/VRV, split AC, RTU, condensing unit, cooling tower, FCU, VAV, chilled beam, ERV, precision/CRAC cooling, dehumidifier, humidifier, air curtain, kitchen exhaust, fire/smoke damper |
 | **Electrical** | LV distribution board, diesel generator, UPS, distribution transformer, ACB/LV switchgear |
 | **Plumbing** | Booster pump set, submersible drainage/sewage pump, electric water heater, GRP water tank |
+| **Fire & life-safety** | Fire pump, sprinkler system, fire-alarm panel, smoke control/ventilation |
 
-> **Not yet included:** market/labour rates (planned for v2). See [Roadmap](#roadmap).
+> **Not yet included:** market/labour rates, services & resources pillars (planned). See [Roadmap](#roadmap).
 
 ## Tools
 

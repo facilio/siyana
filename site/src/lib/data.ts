@@ -32,14 +32,14 @@ export interface Stats {
   brands: number;
   ppmTasks: number;
   faults: number;
-  trades: { hvac: number; electrical: number; plumbing: number };
+  trades: Record<string, number>;
   regions: string[];
 }
 
 export function getStats(): Stats {
   const files = walk(DATA_DIR, /\.md$/i).filter((f) => f.includes(`${sep}equipments${sep}`));
   const brands = new Set<string>();
-  const trades = { hvac: 0, electrical: 0, plumbing: 0 };
+  const trades: Record<string, number> = {};
   let categories = 0;
   let models = 0;
   let ppmTasks = 0;
@@ -48,7 +48,7 @@ export function getStats(): Stats {
     const doc = frontmatter(readFileSync(f, "utf8"));
     if (f.endsWith(`${sep}category.md`)) {
       categories++;
-      if (doc?.trade in trades) (trades as any)[doc.trade]++;
+      if (doc?.trade) trades[doc.trade] = (trades[doc.trade] ?? 0) + 1;
       ppmTasks += (doc?.ppm ?? []).length;
       faults += (doc?.common_faults ?? []).length;
     } else {

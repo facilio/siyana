@@ -13,7 +13,8 @@
           "enum": [
             "hvac",
             "electrical",
-            "plumbing"
+            "plumbing",
+            "fire"
           ]
         },
         "asset_type": {
