@@ -68,6 +68,19 @@ When a manufacturer launches a new model or a practice changes, update the relev
 
 Code changes (tools, loader, schema) are welcome too. Run `npm run typecheck && npm test` before opening a PR, and keep changes consistent with the existing style.
 
+## Releasing (maintainers)
+
+Publishing is automated. Pushing a `vX.Y.Z` tag triggers `.github/workflows/release.yml`, which runs `npm ci` (the `prepare` script builds `dist/`), validates the data, runs tests, and `npm publish`es to npm.
+
+```bash
+npm version patch        # bumps package.json and creates the git tag
+git push --follow-tags   # pushes the commit + tag → CI publishes
+```
+
+Requirements:
+- Repo secret **`NPM_TOKEN`** — an npm granular/automation token with publish rights and "bypass 2FA".
+- The repo is **public**, which enables npm **provenance** (`--provenance` + `id-token` permission). If a fork is private, drop `--provenance` from the workflow.
+
 ## Code of conduct
 
 By participating you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
