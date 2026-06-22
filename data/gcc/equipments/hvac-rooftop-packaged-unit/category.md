@@ -50,6 +50,7 @@ common_faults:
       - Replace filters; allow any ice to clear
       - Leak-test and verify charge
       - Test compressor contactor and capacitor
+    safety_notes: Isolate power and apply lockout/tagout before electrical checks; refrigerant leak-test and recharge by certified technicians only.
   - symptom: Economiser not modulating fresh air
     likely_causes:
       - Seized damper or failed actuator

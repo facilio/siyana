@@ -47,6 +47,7 @@ common_faults:
       - Read fault code on controller and reference OEM code list
       - Clear and test the condensate drain pump and float switch
       - Verify refrigerant-circuit communication wiring/addresses
+    safety_notes: Isolate power and apply lockout/tagout before opening indoor units or accessing PCBs/wiring; refrigerant work by certified technicians only.
 sources:
   - https://www.daikin.com/products/ac/lineup/vrv
   - https://www.mitsubishielectric.com/ldg/ibim/en/products/vrf/

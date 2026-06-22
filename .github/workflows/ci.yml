@@ -17,14 +17,16 @@ jobs:
       - run: npm ci
       - name: Validate data files
         run: npm run validate
+      - name: Content quality
+        run: npm run lint:content
       - name: Typecheck
         run: npm run typecheck
       - name: Test
         run: npm test
       - name: Build
         run: npm run build
-      - name: Check generated JSON schema is up to date
+      - name: Check generated JSON schemas are up to date
         run: |
           npm run gen-schema
-          git diff --exit-code schema/asset.schema.json \
-            || (echo "schema/asset.schema.json is stale — run 'npm run gen-schema' and commit." && exit 1)
+          git diff --exit-code schema/ \
+            || (echo "schema/*.json is stale — run 'npm run gen-schema' and commit." && exit 1)

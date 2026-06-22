@@ -28,6 +28,7 @@
     "dev": "tsx src/index.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "validate": "tsx scripts/validate.ts",
+    "lint:content": "tsx scripts/lint-content.ts",
     "gen-schema": "tsx scripts/gen-schema.ts",
     "freshness": "tsx scripts/freshness.ts",
     "stats": "tsx scripts/stats.ts",
